@@ -1,0 +1,1326 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'oswaldmedium';
+	src: url('../fonts/oswald-medium.woff2') format('woff2'), url('../fonts/oswald-medium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'oswald_regularregular';
+	src: url('../fonts/oswald-regular.woff2') format('woff2'), url('../fonts/oswald-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'oswaldlight';
+    src: url('../fonts/oswald-light-webfont.woff2') format('woff2'),
+         url('../fonts/oswald-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+	font-family: 'robotobold';
+	src: url('../fonts/roboto-bold.woff2') format('woff2'), url('../fonts/roboto-bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'robotoitalic';
+	src: url('../fonts/roboto-italic.woff2') format('woff2'), url('../fonts/roboto-italic.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'roboto_mediumregular';
+	src: url('../fonts/roboto-medium.woff2') format('woff2'), url('../fonts/roboto-medium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'robotoregular';
+	src: url('../fonts/roboto-regular.woff2') format('woff2'), url('../fonts/roboto-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'roboto_lightregular';
+	src: url('../fonts/roboto-light-webfont.woff2') format('woff2'), url('../fonts/roboto-light-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+html, body{ height: 100%}
+body {
+	/* padding-top: 3.5rem;*/
+	font-family: 'robotoregular';
+	font-size: 1rem;
+	transition: all ease 0.2s;
+	color:#000;
+	display: flex;
+  flex-direction: column
+}
+html {
+	font-size: 100%
+}
+a, a:hover{ color:inherit; text-decoration:none}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #a3a3a3 !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #a3a3a3 !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #a3a3a3 !important;
+}
+ul, ul li, ol, ol li{ list-style: none; margin: 0; padding: 0}
+img{ max-width: 100%}
+h1{ font-size: 3.375rem; font-family: 'oswaldmedium'; margin: 1rem 0}
+h3{ font-size: 1.5rem; font-family: 'oswald_regularregular'; }
+.home main section{ padding:3em 0}
+section{ padding: 2em 0}
+/*.main-wrapper {    margin-bottom: 5rem;    } .main-wrapper > *{margin-top: 2rem;}
+.main-wrapper > section:first-child{ padding: 0}*/
+.main-wrapper {    padding: 2em 0 3em 0;}
+.main-wrapper.financing-wrap{ padding-bottom:0}
+.main-wrapper.promotions-wrap{ padding-top:0
+}
+
+.btn-primary {
+    background: #03a9f4;
+    background: -moz-linear-gradient(left, #03a9f4 0%, #6300c0 100%);
+    background: -webkit-linear-gradient(left, #03a9f4 0%,#6300c0 100%);
+    background: linear-gradient(to right, #03a9f4 0%,#6300c0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03a9f4', endColorstr='#6300c0',GradientType=1 );
+    color: #fff;
+    font-family: 'robotobold';
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 0.7em 1.5em;
+    border: none;
+    margin: 1em 0;
+}
+button:focus{ outline: none}
+strong{font-family: 'robotobold';}
+/*header*/
+header.sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+	animation: topslidein 0.5s
+}
+header.sticky .topstripe{ display:none}
+.header{/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#03a9f4+0,6300c0+100 */
+background: #03a9f4; /* Old browsers */
+background: -moz-linear-gradient(left,  #03a9f4 0%, #6300c0 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #03a9f4 0%,#6300c0 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #03a9f4 0%,#6300c0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03a9f4', endColorstr='#6300c0',GradientType=1 ); /* IE6-9 */
+	padding: 0.5rem 0
+}
+.topstripe{ background: #efefef; color: #444444; font-size: 0.9em; padding: 0.2em 0}
+.topstripe ul li { margin-left:10px; text-transform:uppercase; padding: 0; font-family: 'robotoregular';}
+.topstripe ul li a {    color: #444444 !important;}
+header .topstripe nav{ font-size: 0.9em; display: flex;
+    justify-content: flex-end;}
+.topstripe nav .dropdown-menu{font-size: 0.9em;}
+header nav{ display:flex; font-family: 'roboto_lightregular'; font-size: 1.25em; justify-content: flex-end}
+header nav li{ display:inline-flex; padding: 0 1rem}
+header nav li a{ color:#fff}
+header nav li a:hover{ text-decoration:underline; color:#fff}
+@keyframes topslidein{
+	from{ transform: translateY(-100px)}
+	to{transform: translateY(0)}
+}
+header .navbar, header .navbar-brand{ padding:0}
+.dropdown-toggle::after {
+    border-style: solid !important;
+    border-width: 0 0 2px 2px !important;
+    border-color: #fff;
+    width: 8px;
+    height: 8px;
+    transform: rotate(315deg);
+}
+.topstripe .dropdown-toggle::after {border-color: #444444; width: 6px;
+    height: 6px; border-width: 0 0 1px 1px !important;}
+.navbar-dark .navbar-toggler{ border:none}
+.navbar-dark .navbar-toggler-icon {
+    background-image: none;
+    height: 18px;
+	position:relative
+}
+.navbar-dark .navbar-toggler-icon:before, .navbar-dark .navbar-toggler-icon:after {
+    content: "";
+    display: block;
+    border-top: #fff solid 2px;
+    border-bottom: #fff solid 2px;
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    height: 100%;
+}
+.navbar-dark .navbar-toggler-icon:after{border-top: #fff solid 2px;
+    top: 9px;
+    border-bottom: none;}
+/*end*/
+/*footer*/
+footer section{ padding: 0}
+.newsletter{background: #03a9f4; /* Old browsers */
+background: -moz-linear-gradient(left,  #03a9f4 0%, #6300c0 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #03a9f4 0%,#6300c0 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #03a9f4 0%,#6300c0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03a9f4', endColorstr='#6300c0',GradientType=1 ); /* IE6-9 */
+min-height:300px; text-align: center;
+align-items: center; display: flex;
+position:relative
+}
+.newsletter:before {
+    content: "";
+    background: url(../images/canada-map.png) transparent;
+    width: 277px;
+    height: 244px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.newsletter h1{ font-size: 2.25em; color: #fff}
+.newsletter h1 a{ color:#fff; text-decoration: underline}
+.newsletter h4{ font-size: 1.5em; color: #fff; padding: 0.5em 0}
+.newsletter .input-group{ width:80%; margin:auto}
+.newsletter input {
+    border-radius: 30px !important;
+    padding: 1.5em;
+    border: none
+}
+.newsletter .btn-primary {
+    margin: 0;
+    position: absolute;
+    right: 0;
+	background: #252525;
+	color:#fff;
+	padding: 0.8em 3em;
+	z-index: 1
+}
+.top_footer{ background: #252525; padding: 1.5em 0}
+.top_footer h1{ color: #fff; font-size: 2.25em; font-family: 'oswaldlight';  }
+.top_footer p{ color: #fff; text-align: justify}
+.top_footer li {    padding-bottom: 5px; color: #fff}
+.top_footer li a{ color:#fff}
+.top_footer .mainnav li a:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: #fff solid 1px;
+    display: inline-block;
+    transform: rotate(45deg);
+    border-width: 0 0 1px 1px;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+.top_footer ul.socialmedia li, .contact-info ul.socialmedia li {
+    display: inline-flex;
+    margin: 15px 10px 0 0;
+}
+.top_footer ul.socialmedia li a, .contact-info ul.socialmedia li a {
+    width: 45px;
+    height: 45px;
+    /* background: blue; */
+    display: block;
+    border-radius: 50%;
+    background: #03a9f4;
+    background: -moz-linear-gradient(left, #03a9f4 0%, #6300c0 100%);
+    background: -webkit-linear-gradient(left, #03a9f4 0%,#6300c0 100%);
+    background: linear-gradient(to right, #03a9f4 0%,#6300c0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03a9f4', endColorstr='#6300c0',GradientType=1 );
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.top_footer ul.socialmedia li a:hover, .contact-info ul.socialmedia li a:hover{filter: drop-shadow(1px 3px 3px black);}
+.bottom_footer{ background: #e8e8e8; padding: 1.5em 0 .5em  0}
+.bottom_footer h2{font-family: 'oswaldlight'; color:#252525; font-size: 1.5em}
+.bottom_footer a{ color:#252525;}
+.bottom_footer ul{margin-bottom:1em}
+.copyright{ background:#e8e8e8; padding: 0 0 0.2em 0}
+.copyright p{ text-align: center; color: #666666; font-family: 'robotoregular'; font-size: 0.9em }
+/*end*/
+/*homepage*/
+.home section.homeslider{ padding: 0}
+.homeslider .owl-dots {
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px; text-align: center
+}
+.homeslider .owl-dots .owl-dot span{ background: rgb(255 255 255 / 0.3)}
+.homeslider .owl-dots .owl-dot.active span{ background: rgb(255 255 255 / 1)}
+.homeslider .slide-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ececec;
+    margin: auto;
+    right: 0;
+    width: 55%;
+}
+.homeslider .slide-content a.btn-primary{ background: none; border: #fff solid 2px}
+.homeslider .slide-content li{font-size:1.125em; padding-bottom: 0.5em}
+.homeslider .slide-content li:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #03a9f4;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.category{ background: #edf8ff; padding:1.5em 0; align-content: center}
+.category .cate-box{display:flex; justify-content: center; align-items: center;}
+.category .col:nth-child(2) .cate-box{ border-left:#04a7f4 solid 1px; border-right:#04a7f4 solid 1px}
+.category .cate-box *{ margin:0}
+.category .cate-box figure{ margin-right: 1em}
+.category .cate-box h1{ font-size: 2.25rem; margin: 0}
+.category .cate-box h1 span{font-family: 'robotoregular'; font-size: 1.5rem; display: flex; line-height: 1}
+.home .preowned{ background: #f1fbff}
+.preowned .phone-box{padding: 0;}
+.preowned .phone-box > div {
+    padding: 0 10px 0 30px;
+    min-height: 60px;
+}
+.preowned .phone-box button{ margin:10px 10px 10px 30px}
+.preowned .phone-box > figure{ padding: 0}
+.preowned .phone-box > figure img {
+    width: 100%;
+}
+.preowned .phone-box .phone-plan > div.priceplan {
+    padding: 0 0.5em;
+    margin: 0 0.5em;
+}
+.preowned .phone-box .price-terms{ padding-bottom:10px}
+.accessories .phone-box h2{ font-size: 1.2em; min-height: 90px}
+/*.main-wrapper .topsection {
+    margin-top: 2em;
+}*/
+.phone-box {
+	padding: 15px 20px;
+	box-shadow: rgb(0 0 0 / 0.2) 1px 0px 5px;
+	margin-bottom: 2em;
+	transition: all ease 0.2s;
+	background: #fff
+}
+.phone-box:hover {
+	box-shadow: rgb(0 0 0 / 0.5) 1px 0px 8px;
+}
+.phone-box figure {
+	margin: 0
+}
+.phone-box .brand-name{ margin-top:20px}
+.phone-box .phone-plan {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 0.2em;
+}
+.phone-box .phone-plan > div {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+.phone-box .phone-plan > div .instprice {
+	font-family: 'oswaldmedium';
+	font-size: 2.25em;
+	line-height: 1
+}
+.phone-box .phone-plan > div.priceplan {
+	padding: 0 1em;
+	margin: 0 1em;
+	border-right: #e1e1e1 solid 1px;
+	border-left: #e1e1e1 solid 1px
+}
+.phone-box .phone-plan > div span {
+	font-family: 'robotoregular';
+	font-size: 0.875rem;
+	min-height: 1.2rem;
+}
+.phone-box sup {
+	font-size: large;
+}
+.phone-box .phone-plan > div .instprice sup {
+	top: -15px;
+}
+.phone-box .price {
+	padding: 0.5em 0
+}
+.phone-box .price .saveprice {
+	font-size: 1.5em;
+	font-family: 'oswaldmedium'
+}
+.phone-box .price .saveprice sup {
+	top: -5px;
+}
+.phone-box .price .fullprice {
+	font-size: 1.5em;
+	font-family: 'roboto_mediumregular';
+	font-size: 1.125em
+}
+.phone-box .price .fullprice sup {
+	top: -5px;
+	font-size: 75%
+}
+.phone-box button, .phones .button {
+	border: #000 solid 2px;
+	padding: 7px 10px;
+	color: #000;
+	font-size: 1.125em;
+	font-family: 'roboto_mediumregular';
+	background: #fff;
+	transition: all;
+}
+.phone-box button:hover {
+	background: #acacac;
+	border-color: #acacac
+}
+.phone-box .price-terms {
+	padding: 0.5em 0 0;
+	font-size: 0.875rem
+}
+.phone-box h2 {
+	font-family: 'oswaldmedium';
+	font-size: 1.375em;
+	text-decoration: underline;
+	color: #000
+}
+.phone-box h4 {
+	font-size: 1.2em;
+	font-family: 'robotobold';
+	margin: 0
+}
+.top_carriers{background: #f1fbff; text-align: center}
+.top_carriers ul {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.top_brands{ text-align: center; margin: auto; padding-top: 0 !important}
+.top_brands h1{  margin: 1rem auto;}
+.top_brands ul{ display:flex; margin: 1em auto auto; justify-content: center; flex-wrap: wrap; border: #ebebeb solid 1px}
+.top_brands ul li {
+    width: 20%;
+    border-left: #ebebeb solid 1px;
+    padding: 15px 0;
+    border-bottom: #ebebeb solid 1px;
+}
+.top_brands ul li:nth-child(n+6) {
+    border-bottom: none;
+}
+/*end*/
+
+/*other pages*/
+.breadcrumb {
+    border-bottom: #efefef solid 1px;
+    background: #fff;
+    margin-bottom: 0;
+	padding: 0.5rem;
+}
+.breadcrumb li {
+    display: inline-flex;
+	font-size: 0.9em
+}
+.breadcrumb li a{ color:#b0b0b0}
+.breadcrumb li.active{ color:#444444}
+ul.bullets li{     padding: 0 0 0.4em 0;
+    list-style-type: disc;
+    list-style-position: outside;
+    margin:0 0 0 1.2em}
+ul.bullets li::marker {
+    font-size: 1.3em;
+}
+.content p{ font-size:1.125rem}
+.content h4{ margin-top: 1em}
+.accordion-faqs{ margin-bottom: 2em}
+.accordion-faqs .panel-body {
+	display: none;
+  padding:10px; font-size: 1.125em; color:#222222
+}
+.accordion-faqs .panel {
+  cursor: pointer;
+	background: #edf8ff;
+	margin-bottom: 1em
+}
+.accordion-faqs .panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: inherit;
+}
+.accordion-faqs .panel-heading {
+    color: #222222;
+    background-color: #edf8ff;
+    padding: 10px;
+    border-radius: 4px;
+	font-family: 'oswald_regularregular'; font-size: 1.5em; text-transform: uppercase
+}
+.accordion-faqs .panel-heading:before {
+    content: "+";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: #04a8f3 solid 2px;
+    position: relative;
+    display: inline-flex;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3em;
+    color: #04a8f3;
+    font-size: 1em;
+}
+.accordion-faqs .panel.active .panel-heading:before {
+    padding: 0 0 5px 0em;
+    content: "-";
+}
+.voucher-box {
+    padding: 0;
+    box-shadow: rgb(0 0 0 / 0.2) 1px 0px 5px;
+    margin: 1em 0;
+    transition: all ease 0.2s;
+    background: #fff;
+	text-align: center
+}
+.voucher-box:hover{box-shadow: rgb(0 0 0 / 0.5) 1px 0px 8px}
+.voucher-box > div {
+    padding: 15px 0;
+    min-height: 140px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.voucher-box figure{ margin:0}
+.voucher-box .price{font-family: 'oswaldmedium'; font-size: 1.2em; padding:0 10px}
+.voucher-box .price span{ color:#666666}
+.voucher-box button {
+    background: #03a9f4;
+    background: -moz-linear-gradient(left, #03a9f4 0%, #6300c0 100%);
+    background: -webkit-linear-gradient(left, #03a9f4 0%,#6300c0 100%);
+    background: linear-gradient(to right, #03a9f4 0%,#6300c0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03a9f4', endColorstr='#6300c0',GradientType=1 );
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+	width:100%;
+	border: none;
+	padding: 0.7em 0;
+	font-family: 'robotobold';
+	color:#fff;
+	text-transform: uppercase
+}
+.simcards .brand-description h2{font-family: 'oswald_regularregular'; font-size: 2.25em}
+.login-form form{ border:#c2c2c2 solid 1px; border-radius:10px; margin: 3em 0; padding: 3em 2em;}
+.login-form h2{ text-align:center; color:#04a7f3; font-size: 2.25em; margin-bottom: 1em}
+.login-form button {
+    text-align: center;
+    margin: 1em auto;
+    display: flex;
+    padding: 0.7em 3.5em;
+}
+.login-form .form-check label{ color:#666}
+.login-form .login-options {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+.login-form .login-options a{color:#666666; font-family: 'robotobold'; text-decoration: underline}
+.login-form input.form-control{ border-radius:0; border-width:0 0 1px 0}
+.account-details{border:#c2c2c2 solid 1px; border-radius:10px; margin: 1em 0; padding: 0}
+.account-details .btn{ border-radius:4px; background: #ebebeb; color: #000; font-family: 'robotoregular'; text-transform: capitalize}
+.account-details .details-edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+	border-bottom:#c2c2c2 solid 1px;
+	padding: 1em 2em
+}
+.account-details .details-edit .title {
+    display: flex;
+    flex-direction: column;
+}
+.account-details .details-edit:last-child{ border:none}
+.customize-product .phone-display figure{ margin:0}
+.customize-product h2{ font-size:2.25em}
+.customize-product .phone-box{ height:100%; margin:0; padding: 1em 2em}
+.customize-product .phone-box .fixprice {
+    font-size: 2rem;
+    font-family: 'oswaldmedium';
+}
+.customize-product .phone-box .price .saveprice{ padding:0.5em 0}
+.customize-product .phone-box .warranty{ padding:0.5em 0 2em 0}
+.customize-product .phone-box .bullets{ padding:0 0 1em 0}
+.customize-product .phone-box ul.warranty li{ padding:0.2em 0}
+.customize-product .phone-box input[type=checkbox]{ margin-right:0.5em}
+.nav-accessories{ border-right:#ebebeb solid 2px; min-height:350px}
+.nav-accessories h1{ font-size: 1.5rem}
+.nav-accessories ul li {
+    padding-bottom: 0.2em;
+}
+.nav-accessories a{ color:#000}
+.nav-accessories a:before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    transform: rotate(135deg);
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+.plans .item {
+	position: relative;
+	min-height: 410px;
+	box-shadow: rgb(0 0 0 / 0.2) 1px 0px 5px;
+	margin-bottom: 2em;
+	transition: all ease 0.2s;
+	background: #fff;
+	padding-bottom: 2em;
+}
+.plans .item:hover {
+	box-shadow: rgb(0 0 0 / 0.5) 1px 0px 5px;
+}
+.plans .item .custom-radio {
+	position: relative;
+	margin: auto;
+	text-align: right;
+	padding-right: 5px;
+	padding-top: 5px;
+	display: flex;
+	justify-content: flex-end;
+}
+.custom-radio .custom-control-label {
+	position: relative;
+	width: 1.30rem;
+	height: 1.30rem;
+	border: #cccccc solid 2px;
+	border-radius: 50%;
+}
+.custom-radio .custom-control-label::before {
+	display: none
+}
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+	background-color: #21bd77;
+	border-radius: 50%;
+	background-image: none !important;
+	left: inherit;
+	top: 2px;
+	right: 2px;
+	width: 0.8rem;
+	height: 0.8rem
+}
+.plans .item h2 {
+	text-align: center;
+	color: #fff;
+	font-size: 1.25rem;
+	background: #45a8e3;
+	font-family: 'robotobold';
+	padding: 0 10px;
+	flex-direction: column;
+	display: flex;
+	min-height: 3.5em;
+	align-items: center;
+	justify-content: center;
+	margin: 0
+}
+.plans .item h2 span {
+	background: #1472a8;
+	font-size: 1rem;
+	padding: 3px 10px;
+	border-radius: 30px;
+}
+.plans ul li {
+	padding-bottom: 10px;
+	position: relative;
+	padding: 0 15px 8px 30px;
+	text-align: justify;
+	font-size: 1rem;
+	color: #666666;
+	font-weight: 300
+}
+.plans ul li:before {
+	position: absolute;
+	content: "";
+	width: 6px;
+	height: 6px;
+	background: #666666;
+	border-radius: 50%;
+	left: 15px;
+	top: 7px
+}
+.plans .item .content ul {    margin-bottom: 1em;    min-height: 210px}
+.plans .item .content button{ text-align:center; display:flex; margin:auto; padding:0.7em 3em}
+.plans .price, .customize-phone-details .price {
+	color: #000;
+	font-family: 'oswaldmedium';
+	background: #fff;
+	font-size: 2.75rem;
+	font-weight: 300;
+	text-align: center;
+	line-height: 1.2;
+	padding: 1rem 0;
+	border-bottom: #cccccc solid 1px;
+	margin-bottom: 1rem
+}
+.plans sup, .customize-phone-details sup {
+	font-size: 60%;
+	top: -0.6em
+}
+.plans .price span, .customize-phone-details .price span {
+	font-size: 1.25rem;
+	display: block
+}
+.publicmobile{background:#f1fffc}
+.plans .luckymobile .item h2{ background: #3eb1df;}
+.plans .publicmobile .item h2{ background: #c2e9e2; color: #000}
+.plans .bellmobile .item h2{ background: #00639f;}
+.luckymobile h1, .publicmobile h1, .bellmobile h1{ font-size: 2.25em; font-family: 'oswald_regularregular';}
+.publicmobile, .bellmobile{ padding: 1.5em 0}
+.greybox{ background: #e8e8e8; border-radius:4px; padding:2em; margin-bottom: 2em; width:100%}
+.plan-activation input, .plan-activation select, .plan-activation textarea{ border-radius:0px}
+.plan-activation label{ padding-right:5px}
+.plan-activation small{ font-size:1em}
+.plan-activation small a{ color:#03a8f3}
+.card-details h2{ font-size:1.25rem; font-family: 'robotobold'}
+.card-details h2.title-plan{ display:flex; justify-content: space-between}
+.card-details h2.title-plan .price{font-family: 'oswaldmedium';}
+.card-details h2.title-plan .price sup {
+    font-size: 70%;
+    padding-right: 5px;
+}
+.card-details h2.title-plan .price span{ font-size: 1.5rem}
+.card-details .input-group{ align-items:center}
+.card-details .form-group span{ padding: 0 0.5em}
+.card-details label{justify-content:flex-start; padding-left: 0}
+.contact-form-details{margin:2em 0}
+.contact-form-details .contact-form{ box-shadow:rgb(0 0 0 / 0.5) 1px 0px 8px; padding:2em; }
+.contact-form-details .contact-form input, .contact-form-details .contact-form textarea{ border-radius:0; padding: 1.5em 1em; border-color:#ebebeb}
+.contact-form-details .contact-form .form-row>.col, .contact-form-details .contact-form .form-row>[class*=col-] {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.contact-form-details .contact-form label{color:#666666; font-family: 'robotobold'}
+.contact-form-details .contact-info ul li{ padding-bottom:0.4em}
+.contact-form-details .contact-info h2{ font-size:1.5em; font-family: 'robotobold'}
+.network-matters{ padding:1em 0}
+.network-matters h2{ font-size: 2.5em; margin: 1em 0; color:#03a8f3; text-align: center}
+.network-matters .network-usp{ text-align: center; margin: 1em 0}
+.network-matters .network-usp h4{ margin: 1em 0}
+.order-details .order-items{ border-top:#e3e3e3 solid 1px; padding: 1em 0}
+.order-details .order-items .item-description{ font-size: 1rem; font-family: 'robotobold';}
+.order-details .order-items .item-description h2{color:#05a6f3; font-size: 1rem}
+.order-details .order-items .item-description p{margin-bottom: .5rem;}
+.order-details .order-items .item-price{font-family: 'oswaldmedium'; font-size: 2.25em}
+.order-details .order-items .item-price sup{ font-family: 'oswald_regularregular'; font-size: 60%; top: -0.6em;}
+.order-details .order-summary{font-family: 'oswaldmedium'; padding-left: 1em}
+.order-details .order-summary h2{ text-transform: uppercase; font-size: 1.875em; font-family: 'oswaldmedium';}
+.order-details .order-summary .summary-box{ background: #ebebeb; padding: 15px; font-size:1.25em}
+.order-details .order-summary .summary-box .summary-total{font-size:1.25em; border-top: #000 solid 1px; padding: 1rem 0 0}
+.main-wrapper .banner{margin:0}
+.financing .feature-box {
+    box-shadow: rgb(0 0 0 / 0.2) 1px 0px 5px;
+    padding: 1em;
+    text-align: center;
+    margin: 1em auto;
+    min-height: 290px;
+}
+.financing .feature-box figure {
+    min-height: 70px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.financing .feature-box p{ text-align: justify; text-align-last: center}
+.how-finance-work{ background: #f5f5f5; padding: 2em;}
+.how-finance-work .phone-box{ box-shadow:none; background:none}
+.how-finance-work .phone-box .phone-plan > div.priceplan{ border-left:none; padding: 0 1em 0 0;
+    margin: 0 1em 0 0;}
+.how-finance-work h2{ font-size: 1.875em; font-family: 'oswald_regularregular';}
+.how-finance-work ol li {
+    list-style: decimal;
+    padding-bottom: 0.5em;
+    margin-left: 20px;
+}
+.support .support-box{ border-top:#e3e3e3 solid 1px; padding: 1em 1em 1em 0}
+.support .support-box h4.title{font-family: 'roboto_mediumregular'; display: flex; justify-content: space-between}
+.support .support-box p{ color:#666666}
+.support .support-box a{font-family: 'roboto_mediumregular';}
+.support .support-box a:after {
+    content: "";
+    display: inline-block;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+	margin-left: 5px
+}
+.customize-phone {
+    margin: 0;
+    padding-bottom: 0;
+}
+.customize-phone h1 {
+	font-size: 2.25rem;
+	font-family: 'oswaldmedium';
+	margin-top: 0
+}
+.customize-phone hr {
+	margin: 50px 0
+}
+.customize-phone .phone-box {
+	border: #e1e1e1 solid 2px;
+	padding: 20px 0;
+	border-radius: 4px;
+	text-align: center;
+	margin-bottom: 20px
+}
+.data-storage p, .phone-color p, .additional-options p {
+	font-size: 1em;
+	color: #222;
+	font-family: 'robotobold';
+	margin-bottom: 0.2em
+}
+.data-storage ul, .phone-color ul {
+	display: flex;
+	flex-wrap: wrap
+}
+.data-storage ul li, .phone-color ul li {
+	margin-right: 10px
+}
+.data-storage ul li label, .phone-color ul li label {
+	border: #acacac solid 2px;
+	padding: 5px 15px;
+	color: #acacac;
+	border-radius: 0;
+	cursor: pointer;
+	font-family: 'oswaldmedium';
+	font-size: 1.25em;
+}
+.data-storage ul li label.form-check-label, .phone-color ul li label.form-check-label { border-color:#1883c1; color:#000}
+.data-color-finalize ul li label {
+	border: #1883c1 solid 2px;
+	color: #000;
+}
+.data-storage ul li label input[type="radio"], .phone-color ul li label input[type="radio"] {
+	color: #44a7e2;
+	border-color: #44a7e2;
+	visibility: hidden;
+	position: absolute
+}
+.phone-color {
+	margin: 20px 0
+}
+.phone-color h4 {
+	font-size: 1.2rem
+}
+.price .ourprice {
+	color: red;
+	font-size: 1.5rem;
+	font-weight: 500
+}
+.additional-options h2 {
+	font-size: 1.2rem
+}
+.additional-options ul li {
+	margin-bottom: 8px
+}
+.customize-phone-details {
+	box-shadow: rgb(0 0 0 / 0.2) 1px 0px 5px;
+	padding: 2em;
+	margin-bottom: 2.5em
+}
+.phone-display figure {
+	text-align: center
+}
+.customize-phone-details .brand-price {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 0.5em
+}
+.customize-phone-details h4 {
+	font-size: 1.375em;
+	font-family: 'robotobold';
+	margin: 0
+}
+.customize-phone-details .price {
+	font-size: 2.25rem;
+	border: none;
+	padding: 0;
+}
+.rateplan .price {
+	color: #1883c1
+}
+.rateplan .plans ul li {
+	padding: 0 15px 10px 20px
+}
+.rateplan .plans ul li:before {
+	left: 0
+}
+.customize-phone-details .phone-usp {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1em
+}
+.customize-phone-details .phone-usp > div {
+	flex: calc((100%/2) - 0.6em);
+	margin: 0.3em 0;
+	flex-direction: row;
+	display: flex;
+}
+.customize-phone-details .phone-usp > div figure {
+	margin-right: 1em;
+}
+.customize-phone-details .phone-usp > div figure img {
+	max-width: inherit
+}
+.customize-phone-details .phone-usp > div p {
+	font-size: 1em;
+	margin: 0
+}
+.customize-phone-details .phone-usp > div h3 {
+	font-size: 1.5em;
+	font-family: 'oswaldmedium';
+	line-height: 1
+}
+.customize-phone-details.summary {
+	background: #333333;
+	color: #fff;
+	display: flex;
+	justify-content: flex-start;
+}
+.customize-phone-details.summary > div {
+	display: flex;
+	flex-direction: column;
+}
+.customize-phone-details.summary h2 {
+	font-family: 'oswaldmedium';
+	font-size: 2.5em;
+	margin: 0;
+	padding: 0
+}
+.customize-phone-details.summary .sub-head {
+	font-size: 1.375em;
+	font-family: 'robotobold'
+}
+.customize-phone-details.summary span {
+	font-size: 1.125em
+}
+.customize-phone-details.summary .monthly-info {
+	border-left: #fff solid 1px;
+	border-right: #fff solid 1px;
+	display: flex;
+	padding: 0 1.5em;
+	margin: 0 1.5em
+}
+
+/*new pages and edits from 08-05-2021*/
+b{font-family: 'robotobold';}
+.linebox {
+    background: #fff;
+	border:#cccccc solid 1px;
+    border-radius: 8px;
+    padding: 2em;
+    margin-bottom: 2em;
+    width: 100%;
+}
+.linebox h2.title-plan{ font-size:1.25em; font-family: 'robotobold'; margin: 0 0 1em 0;}
+.linebox h3{ font-size:1.5em; margin: 1rem 0; font-family: 'robotobold';}
+.linebox .form-control{ border-radius:8px !important}
+.barcode-sim {
+    background: #e2f4ff;
+    border-radius: 8px;
+    padding: 2em;
+    margin: 1.5em 0 0 0;
+    width: 100%;
+	text-align: center
+}
+.barcode-sim p{ font-family: 'robotobold'; font-size: 1.125em}
+.barcode-sim figure {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.step-btn{ display:flex; justify-content: flex-end;  align-items: center;}
+.step-btn a{ text-decoration:underline}
+.step-btn p, .step-btn .custom-control{margin-right: auto;}
+.step-btn >*{ margin:0 0 15px 0}
+.plan-box.publicmobile{ background: #f4e8d9; border: #034045 solid 2px; text-align: center; color:#034045}
+.plan-box.luckymobile{ background: #c3ecfd; border: #002d72 solid 2px; text-align: center; color:#000}
+.plan-box{ border-radius: 10px; padding: 2em; margin-bottom: 2em;}
+.plan-box h1{font-family: 'robotobold'; font-size: 1.5em; margin: 0}
+.plan-box .price{ font-size:4em; font-family: 'oswaldmedium'; line-height: 1; padding: 1rem 0}
+.plan-box.luckymobile .price{ color:#002d72}
+.plan-box .price small{font-size: 60%;}
+.plan-box hr{ margin: 0 1em; border-color: #034045;}
+.plan-box.luckymobile hr{ border-color:#002d72}
+.plan-box ul li{ margin-top: 0.5em; font-family: 'robotobold'; font-size: 1.5rem}
+.plan-box ul li span{ display:block; font-family: 'robotoregular'; font-size:1.125rem}
+.plan-box button{ border-radius:8px; width:100%; font-size:1.125em; font-family: 'robotobold'; border:none; color:#f4e8d9; background: #034045; padding: 0.4em 1em; margin-top: 1em; display: flex;  align-items: center; justify-content: center;}
+.plan-box.luckymobile button{background:#002d72; color:#fff}
+.purchase-box{ background: #f4e8d9; border: #034045 solid 2px; color:#034045; padding: 1em; border-radius:8px}
+.purchase-box h2 a{ text-decoration: underline}
+.linebox .purchase-box input{ text-align:left}
+.linebox .anomynous{ margin:2em 0}
+.linebox .registration-info{ margin:2em 0 0}
+.linebox .anomynous .heading, .linebox .registration-info .heading{font-family: 'robotobold'; font-size:1.125rem; margin: 0.5em 0 1em 0;}
+.linebox .form-inline span {
+    font-family: 'robotobold';
+    color: #666666;
+    font-size: 14px;
+    padding: 0 5px;
+	line-height: 34px;
+}
+.linebox .confirmation p,.notes{ color:#666666}
+.linebox a{ text-decoration:underline}
+.linebox .carrier{ margin-bottom:2em}
+.brand-description h3{ font-size: 2.25em; font-family: 'robotobold'; margin: 0.5em 0}
+.order-number input.form-control{ background: none; border: #034045 solid 1px}
+.order-number input.form-control-plaintext{ text-align: center}
+.thankyoupopup{ background:rgb(255 255 255 / 80%); position: fixed; width:100%; height: 100%; top: 0; left: 0; z-index: 9999}
+.thankyoubox {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    transform: translateY(-50%) translateX(-50%);
+    top: 50%;
+    background: #fff;
+    width: auto;
+    margin: auto;
+    display: table;
+    box-shadow: rgb(11 155 239 / 50%) 1px 1px 6px;
+    padding: 2em 3em;
+    text-align: center;
+}
+.thankyoubox .content{ margin:1em 0}
+.thankyoubox p{ margin-bottom: 0; font-size:1.125em; color: #666}
+/*topups*/
+.topup-form .text-center input{ text-align: center}
+.topup-form .form-check-label{ color:#666}
+.topup-process {
+    border: #cccccc solid 1px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+	overflow:hidden;
+	margin: 0.5em 0 2em 0
+}
+.topup-process .box-process{ position: relative;
+    overflow: hidden;
+    width: 33.33%;
+    padding: 0.5em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;}
+.topup-process .box-process:before{ content:""; width: 40px; height: 40px; background: #3eb1df; transform: rotate(45deg); display: block;
+    position: absolute;
+    left: -20px;
+    top: 30%;}
+.topup-process .box-process:after{ content: "";
+    box-shadow: #000 0px 2px 15px;
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    height: 100%;
+    width: 10px;}
+.topup-process .box-process:nth-child(1){ color:#3eb1df}
+.topup-process .box-process:nth-child(2){color:#f57f29}
+.topup-process .box-process:nth-child(2):before{ background: #f57f29}
+.topup-process .box-process:nth-child(3){color:#5c518d}
+.topup-process .box-process:nth-child(3):before{ background: #5c528d}
+.topup-process .box-process figure{ margin-bottom: 0.5em;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.summary-box{ background: #f4f4f4; padding: 1em; border-radius: 8px; margin-bottom: 2em}
+.summary-box h2{ color:#222222; font-size:1.25em; font-family: 'robotobold'}
+.summary-box hr {    margin: 1em 0;    border-top: #3eb1df solid 2px}
+.summary-box-line{ border-bottom: #e3e3e3 solid 1px; padding: 7px 0}
+.summary-box-line:last-child{ border:none}
+.summary-box .title{ color:#666666; font-size:1.125em}
+.summary-box .desc{ color:#666666; font-size:1.125em; font-family: 'robotobold';}
+.summary-box button{ color:#666666; font-size:1em; background:#e9e9e9; border-radius: 4px; position: relative; border:none; padding-right:15px; display: flex;
+    margin-left: auto;}
+.summary-box button:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #666666;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+.carrier-plan{box-shadow: rgb(214 214 214) 1px 1px 5px; background: #fff; border-radius: 8px; padding: 1em 2em; margin: 2em 0 1em 0}
+.carrier-plan h2{ color:#666666; font-size: 1.25em}
+.carrier-plan-box{ border:#cccccc solid 1px; border-radius: 4px; box-shadow: rgb(214 214 214) 0px 1px 7px; padding: 1em; margin: 1em 0;
+    position: relative;}
+.carrier-plan-box.selected{ border-color:#3eb1df}
+.carrier-plan-box .value-offer {
+    color: #fff;
+    background: #3eb1df;
+    border-radius: 30px;
+    display: table;
+    padding: 2px 10px;
+    position: absolute;
+    top: -11px;
+    font-size: 14px;
+}
+.carrier-plan-box p{ color: #666; padding: 0 0 5px 0; margin: 0}
+.carrier-plan-box h3{ margin:0; color: #222222; font-size:1.5em}
+.carrier-plan-box hr{ border-top:#f4f4f4 solid 2px; margin: 0.3rem 0}
+.carrier-list h2{ text-align:center; font-family: 'robotobold'; font-size: 2.25em; margin: 1.5em 0 1em 0}
+.carrier-list figure {    box-shadow: rgb(214 214 214) 1px 1px 5px; margin-bottom: 2em}
+.sim-note a{ text-decoration:underline; color: #2d9bc7}
+.simcards .phone-box button{border: #3eb1df solid 2px;
+    color: #000;
+    background: #e2f4ff;}
+.primary-color{ color:#1c8bb7; text-decoration: underline}
+.pre-active-plan h3{ font-size: 2.25em; display: flex; align-items:center; margin: 1em 0 0.5em 0}
+.pre-active-plan h3 img{ margin-right:10px}
+.pre-active-plan .simplan-box{ margin: 1em 0 3em 0; border-bottom: #034045 solid 2px; text-align: center}
+.pre-active-plan .simplan-box .content{text-align: left;
+    color: #034045;
+    display: flex;
+    justify-content: center;
+    align-items: center;} 
+.pre-active-plan .simplan-box .content li {
+    display: flex;
+	align-items: center; line-height: 1.2;
+    margin-top: 0.6em;}
+.pre-active-plan .simplan-box .content li span:first-child{ margin-right:10px}
+.pre-active-plan .simplan-box button{ background: #034045; border-radius: 8px; text-align:center; color: #fff; display: block; margin: 1em auto; border: none; color: #f4e8d9; min-width: 151px; text-align: center; padding: 0.5em 1em; font-family: 'robotobold'; font-size: 1.125em}
+.pre-active-plan.luckymobile-plan .simplan-box button{ background: #002d72; color: #fff}
+.pre-active-plan.luckymobile-plan .simplan-box{ border-bottom: #002d72 solid 2px;}
+.pre-active-plan.luckymobile-plan .simplan-box .content{ color:#000} 
+.plan-included{ border-radius: 8px; background: #e2f4ff; padding: 2em}
+.plan-included .title-offer{ display:flex; justify-content: space-between; flex-wrap: wrap;}
+.plan-included .title-offer .highlight{ background: #5813c6; color:#fff; font-family: 'oswald_regularregular';
+ font-size: 1.5em; border-radius: 4px; line-height: 1; padding: 0.5em 1em; }
+.plan-included h3{ font-size:1.875em; border-bottom: #000 solid 2px; padding-bottom: 0.2em}
+.plan-included ul{ margin:1em 0}
+.plan-included ul li{ color:#222222; font-size: 1.25em; position: relative; padding-left: 30px;
+    padding-bottom: 8px;}
+.plan-included ul li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: url(../images/checked-icon.png) no-repeat;
+    display: block;
+    width: 23px;
+    height: 21px;
+	top: 3px;
+}
+.plan-included p{color:#222222; font-size:1.125em}
+.plan-check .custom-control-label::before, 
+.plan-check .custom-control-label::after {
+top: .3rem;
+width: 1.6rem;
+height: 1.6rem;
+}
+.plan-check .custom-control-label{ font-size: 1.5rem; padding-left: 0.6rem}
+.buy-option .title{font-size: 1.5em; font-family: 'oswaldmedium'; position: relative}
+.buy-option .title:before {
+    position: absolute;
+    content: "";
+    left: -17px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: #000 solid 2px;
+    top: 13px;
+}
+.buy-option .title.cash:before{ top:22px}
+.buy-option .title .instprice{ font-size: 2rem}
+.buy-option p {
+    margin-bottom: 0.6em;
+    font-size: 0.9em;
+    line-height: 1;
+}
+.additional-options input{ margin-right:8px; background: transparent}
+.customize-phone-details.highlight{ background:#e2f4ff; border:#0075ff solid 2px}
+.finalize .data-storage, .finalize .phone-color {
+    display: inline-flex;
+    width: auto; margin: 0;
+}
+.payment-options .payment-box{ position:relative; margin-bottom: 2em;}
+.payment-options h4{ font-size: 1.375em; font-family: 'robotobold'; color:#222222; margin-bottom: 0.8em}
+.payment-options .payment-box .radiobox{ position: absolute; right: -15px; top: -15px;}
+.payment-options .payment-box .radiobox input{ width:30px; height: 30px; cursor: pointer}
+.payment-options .payment-box .radiobox input:before {
+    margin: auto;
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    border: #989898 solid 2px;
+	text-align: center;}
+.payment-options .payment-box .radiobox input:checked:after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 6px;
+    border-color: #0075ff;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    transform: rotate(135deg);
+    position: absolute;
+    top: 10px;
+    left: 9px;
+}
+.payment-options .payment-box .radiobox input:checked:before{ border-color:#0075ff}
+.payment-options .payment-box .details{display: flex; justify-content: flex-start;  background: #eeeeee; padding: 1.5em; border:transparent solid 2px}
+.payment-options .payment-box.selected .details{ background: #e2f4ff; border:#0075ff solid 2px}
+.payment-options .payment-box.selected .details > div:after{ background: #0075ff}
+.payment-options .payment-box .details > div {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    width: 35%;
+}
+.payment-options .payment-box .details > div:last-child{width: 30%;}
+.payment-options .payment-box .details > div:last-child:after{ display: none}
+.payment-options .payment-box .details > div:after{ position:relative; content:""; display: block; width: 1px; height: 100%; background: #c3c3c3}
+.payment-options .payment-box .details .summary h3{font-family: 'robotobold'; font-size:1.2em; margin: 0; line-height: 1}
+.payment-options .payment-box .details .summary.plan-charges h3{font-family: 'robotoregular'; font-size:1.125em}
+.payment-options .payment-box .details .summary h2{ font-size:2.25em; font-family: 'oswaldmedium'; margin: 0.1em 0}
+.payment-options .payment-box .details .summary h2 sup{font-family: 'oswald_regularregular'; top: -7px;}
+.payment-options .payment-box .details .summary p{ font-size:0.8em; margin: 0}
+.payment-options .notes{ font-size: 1em; color: #666666; line-height:1.8; margin: 1em 0}
+.phone-display {  width:100%;  display:block;  margin:0 auto;}
+.slick-slide{ padding: 5px}
+.slick-slide.slick-active {    opacity: 0.7;}
+.slick-slide.slick-current {    opacity: 1;}
+.slick-slide img {    display: block;    width: 100%;}
+
+
+@media screen and (min-width:1200px){ 
+	.container{ max-width: 1250px}
+}
+@media (max-width: 767px) { 
+	.thankyoubox{width:95%}
+	.payment-options .payment-box .details{ padding:0.8em 0.5em; font-size: 85%}
+	.payment-options .payment-box .details > div:after{ display:none}
+	.payment-options .payment-box .details > div{ width: 33% !important}}
+}
+@media (max-width: 576px) { 
+	html{font-size:85%}
+	h1 {    font-size: 2.5rem}
+	header nav li {
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+		border-bottom: #ffffff2e solid 1px;
+}
+	header nav li:last-child{border:none}
+	.card-details h2.title-plan {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+	.navbar-nav .dropdown-menu {
+    position: absolute;
+    width: 100%;
+}
+	.topstripe .call{ display:none}
+	.home main section {    padding: 1em 0}
+	.homeslider .slide-content {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-35%);
+    color: #ececec;
+    width: 100%;
+    padding: 1em;
+		z-index: 9;
+}
+	.homeslider .item {
+    height: 250px;
+}
+	.homeslider .item:after {
+    content: "";
+    background: rgb(0 0 0 / 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+	.homeslider .item img {
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+}
+	.homeslider .item ul{ display:none}
+	.homeslider .item a{ margin-top:0}
+
+	.category .col:nth-child(2) .cate-box{ border:none}
+	.accessories .phone-box h2 {    min-height: auto;}
+	.top_carriers ul li {    width: 28%;}
+	.newsletter h1 {    font-size: 1.8em}
+	.login-form form {
+    margin: 2em 0;
+    padding: 2em 1em;
+}
+	.customize-product .phone-box {    margin: 1em 0}
+	/*.card-details h2 {		font-size: 2rem;}*/
+	.card-details .input-group input, .card-details .input-group select {
+    width: 100%;
+    clear: both;
+}
+	.input-group.areacode input {    width: 20% !important}
+	.plans .item, .plans .item .content ul{    min-height: auto;}
+	.order-details .order-summary{ padding-left:0}
+	.order-details .order-items .item-description {    font-size: 1.2rem}
+	.order-details .order-items .item-description h2{    font-size: 1.5rem;}
+	.order-items .order-last {    order: 0;    text-align: left !important;}
+	.contact-form-details .contact-form{ padding:1.5em}
+	.contact-form-details .contact-info{ margin-top:1em}
+	.financing .feature-box{min-height:auto}
+	.preowned .phone-box > div {min-height:auto}
+	.brand-description h1{ margin-top:0 }
+	.nav-accessories {
+    min-height: auto;
+    margin-bottom: 1em;
+}
+	.nav-accessories h1 {
+    font-size: 2rem; margin-top:0
+}
+	
+}
+@media (min-width: 768px) {
+	.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+}
+/*
+@media (min-width: 992px) { ... }*/
+@media (min-width:1024px) and (max-width: 1300px) { header nav {    font-size: 1em; }
