@@ -1637,11 +1637,17 @@ input#savedcard{ visibility:hidden}
 	.thankyoubox{width:95%}
 	.payment-options .payment-box .details{ padding:0.8em 0.5em; font-size: 85%}
 	.payment-options .payment-box .details > div:after{ display:none}
-	.payment-options .payment-box .details > div{ width: 33% !important}}
+	.payment-options .payment-box .details > div{ width: 33% !important}
 .order-details .order-items .item-price{text-align: left !important;}
 .yourorder .order-box {    display: block;}
 .yourorder .box .box-header{flex-wrap: wrap;}
 .yourorder .box .orderid{ margin-top:1em}
+	.paymethods {    justify-content: space-evenly;}
+.savedcard .cardbox{justify-content: inherit;
+    align-items: center;
+    flex-wrap: wrap;}
+.savedcard .cardbox .form-check-input {    margin-right: 5px}
+.paymethods .methodbox{min-width: 92px; margin: 5px; padding: 5px; text-align: center}
 }
 @media (max-width: 576px) { 
 	html{font-size:85%}
@@ -1733,14 +1739,6 @@ input#savedcard{ visibility:hidden}
   display: block;
 }
 }
-@media (max-width: 767px) {
-	.paymethods {    justify-content: space-evenly;}
-.savedcard .cardbox{justify-content: inherit;
-    align-items: center;
-    flex-wrap: wrap;}
-.savedcard .cardbox .form-check-input {    margin-right: 5px}
-.paymethods .methodbox{min-width: 92px; margin: 5px; padding: 5px; text-align: center}
-	}
 /*
 @media (min-width: 992px) { ... }*/
 @media (min-width:1024px) and (max-width: 1300px) { header nav {    font-size: 1em; }
