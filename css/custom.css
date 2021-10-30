@@ -1638,8 +1638,7 @@ input#savedcard{ visibility:hidden}
 	.payment-options .payment-box .details{ padding:0.8em 0.5em; font-size: 85%}
 	.payment-options .payment-box .details > div:after{ display:none}
 	.payment-options .payment-box .details > div{ width: 33% !important}
-.order-details .order-items .item-price{text-align: left !important;}
-.yourorder .order-box {    display: block;}
+.order-details .order-items .item-price{text-align: left !important;}	
 .yourorder .box .box-header{flex-wrap: wrap;}
 .yourorder .box .orderid{ margin-top:1em}
 }
@@ -1740,6 +1739,7 @@ input#savedcard{ visibility:hidden}
     flex-wrap: wrap;}
 .savedcard .cardbox .form-check-input {    margin-right: 5px}
 .paymethods .methodbox{min-width: 92px; margin: 5px; padding: 5px; text-align: center}
+	.yourorder .order-box {    display: block;}
 	}
 /*
 @media (min-width: 992px) { ... }*/
