@@ -1600,9 +1600,6 @@ input#savedcard{ visibility:hidden}
 	display:none
 }
 .togglebox.active{ display:block}
-#allupdates .days p.title{}
-#allupdates .days ul li{}
-#allupdates .days {}
 #allupdates .days ul {
     display: flex;
     align-items: center;
@@ -1623,7 +1620,19 @@ input#savedcard{ visibility:hidden}
 }
 #allupdates .disclaimer{ color:#C4C4C4; font-size:0.9em}
 #allupdates h2{ margin:0; color:#0D97EF}
-/****/
+.freesim-details h4{ color:#000; font-weight:300; font-size:1.6em; margin-bottom:2em}
+.freesim-details h5{ color:#0D97EF; font-weight:600; font-size:1.6em}
+.freesim-details .delivery-address .delivery-box {
+    min-height: 210px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.freesim-details .delivery-box figure{ text-align:center}
+.freesim-details .delivery-box button{ margin:0; margin-left: auto;}
+.publicmobile-plan,.luckymobile-plan{display:none}
+.publicmobile-plan.active,.luckymobile-plan.active{display:block}
 @media screen and (min-width: 576px){
 .modal-dialog {
     max-width: 800px;
