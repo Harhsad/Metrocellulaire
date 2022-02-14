@@ -83,7 +83,7 @@ footer {
   color: #a3a3a3 !important;
 }
 ul, ul li, ol, ol li{ list-style: none; margin: 0; padding: 0}
-img{ max-width: 100%}
+img{ max-width: 100%; height: auto}
 h1{ font-size: 3.375rem; font-family: 'oswaldmedium'; margin: 1rem 0}
 h3{ font-size: 1.5rem; font-family: 'oswald_regularregular'; }
 .home main section{ padding:3em 0}
@@ -746,13 +746,13 @@ ul.bullets li::marker {
 .network-matters .network-usp{ text-align: center; margin: 1em 0}
 .network-matters .network-usp h4{ margin: 1em 0}
 .order-details .order-items{ border-top:#e3e3e3 solid 1px; padding: 2em 0}
-.order-details .order-items:nth-child(1){ border:none}
-.order-details .order-items .item-description{ font-size: 1rem; font-family: 'robotobold';}
-.order-details .order-items .item-description h2{color:#05a6f3; font-size: 1rem}
+.order-details .order-items:nth-of-type(1) {    border-top: none !important;    padding-top: 1em}
+.order-details .order-items .item-description{ font-size: 1rem; line-height: 1.2;/* font-family: 'robotobold';*/}
+.order-details .order-items .item-description h2{color:#05a6f3; font-size: 1rem; font-family: 'robotobold'}
 .order-details .order-items .item-description p{margin-bottom: .5rem; color:#666666}
 .order-details .order-items .item-price{font-family: 'oswaldmedium'; font-size: 2.25em}
 .order-details .order-items .item-price sup{ font-family: 'oswald_regularregular'; font-size: 60%; top: -0.6em;}
-.order-details .order-summary{font-family: 'robotoregular';    border: #EAEAEA solid 1px;  border-radius: 4px;}
+.order-details .order-summary{font-family: 'robotoregular';  border-radius: 4px; background: #F4F4F4}
 .order-details .order-summary h2{ /*text-transform: uppercase;*/padding: 0.5em;  font-size: 1.875em; font-family: 'oswaldmedium'; border-bottom:#e1e1e1 solid 1px}
 .order-details .order-summary .summary-box{ font-size:1em; color:#666}
 .order-details .order-summary .summary-box > div { padding: 0 1rem;}
@@ -797,7 +797,11 @@ ul.bullets li::marker {
 	font-size:1.2em
 }
 .order-details .order-items .item-description .additems {    display: flex;  align-items: center;}
-.order-details .order-items .item-description .additems .removeitems .btn-link{ color:#ff0000; text-decoration: underline}
+.order-details .order-items .item-description .additems .removeitems .btn-link{ color: #ff0000;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9em;}
 
 .main-wrapper .banner{margin:0}
 .financing .feature-box {
@@ -1025,6 +1029,13 @@ b{font-family: 'robotobold';}
     justify-content: center;
 }
 .step-btn{ display:flex; justify-content: flex-end;  align-items: center;}
+.step-btn .btn-primary {
+    border-radius: 30px;
+    padding: 10px;
+    min-width: 160px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 .step-btn a{ text-decoration:underline}
 .step-btn p, .step-btn .custom-control{margin-right: auto;}
 .step-btn >*{ margin:0 0 15px 0}
@@ -1164,7 +1175,7 @@ b{font-family: 'robotobold';}
     color: #000;
     background: #e2f4ff;}
 .primary-color{ color:#1c8bb7; text-decoration: underline}
-.pre-active-plan h3{ font-size: 2.25em; display: flex; align-items:center; margin: 1em 0 0.5em 0}
+.pre-active-plan h3{ font-size: 2.25em; display: flex; align-items:center; margin:0.5em 0 0.5em 0}
 .pre-active-plan h3 img{ margin-right:10px}
 .pre-active-plan .simplan-box{ margin: 1em 0 3em 0; border-bottom: #034045 solid 2px; text-align: center}
 .pre-active-plan .simplan-box .content{text-align: left;
@@ -1620,22 +1631,258 @@ input#savedcard{ visibility:hidden}
 }
 #allupdates .disclaimer{ color:#C4C4C4; font-size:0.9em}
 #allupdates h2{ margin:0; color:#0D97EF}
-.freesim-details h4{ color:#000; font-weight:300; font-size:1.6em; margin-bottom:2em}
-.freesim-details h5{ color:#0D97EF; font-weight:600; font-size:1.6em}
+.freesim-details h4{ color:#000; font-weight:300; font-size:1.5em; margin-bottom:2em}
+.freesim-details h5{ color:#0D97EF; font-weight:600; font-size:1.5em}
 .freesim-details .delivery-address .delivery-box {
-    min-height: 210px;
-    display: flex;
+    border: #EAEAEA solid 1px;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: #ededed 0px 0px 15px;
+    min-height: 126px;
+    display: inline-flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
+    width: 240px;
+	position: relative;
+	margin-right: 3em;
+	margin-bottom: 3em
 }
 .freesim-details .delivery-box figure{ text-align:center}
-.freesim-details .delivery-box button{ margin:0; margin-left: auto;}
+.freesim-details .delivery-box figure img{ height: 65px; width:auto}
+.freesim-details .delivery-box button {    margin: 0;    position: absolute;    bottom: -17px;}
+.freesim-details h5 span.icon{width: 60px;
+    height: 60px;
+    display: inline-block;
+    background: #F5F5F5;
+    text-align: center;
+    vertical-align: baseline;
+    line-height: 60px;
+    margin-right: 10px; border-radius:50%}
+.freesim-details .btn{ background: #E5E5E5; color:#666666; border-color:#E5E5E5; font-family: 'roboto_mediumregular'}
+.freesim-details .btn.active{
+    background: #03a9f4;
+    background: -moz-linear-gradient(left, #03a9f4 0%, #6300c0 100%);
+    background: -webkit-linear-gradient(left, #03a9f4 0%,#6300c0 100%);
+    background: linear-gradient(to right, #03a9f4 0%,#6300c0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03a9f4', endColorstr='#6300c0',GradientType=1 );
+    color: #fff;    
+}
 .publicmobile-plan,.luckymobile-plan{display:none}
 .publicmobile-plan.active,.luckymobile-plan.active{display:block}
+.sim-plan-benefits .benefit-box {
+    width: 17%;
+    display: inline-flex;
+    text-align: center;
+    border: #BCE3FC solid 1px;
+    margin: 0 1em 1em 1em;
+    justify-content: center;
+    min-height: 115px;
+    align-items: center;
+    border-radius: 6px;
+	padding:1em 0 0;
+}
+.sim-plan-benefits .benefit-box figure{ margin-bottom: 0.5em}
+.sim-plan-benefits .benefit-box h6{ font-size:1em; color:#666; font-family: 'roboto_mediumregular'; min-height: 30px;  margin: 0;}
+.login-security .grey-box{ border:#EAEAEA solid 1px; border-radius:4px; color:#666}
+.login-security .grey-box .user-edits{ display:flex; justify-content: space-between; border-bottom:#EAEAEA solid 1px; padding:1em 2em; align-items: center;}
+.login-security .grey-box .user-edits .user-title, .login-security .user-title{ display: flex; flex-direction: column;}
+.login-security .grey-box .user-edits .user-title span, .login-security .user-title span{ font-weight:600}
+.login-security label{ margin:0}
+.login-security button[type="submit"]{ min-width: 160px}
+.login-security .modal{ color:#666}
+.login-security .modal .modal-header, .youraddress .modal .modal-header  {    background: #EFEFEF; padding: 0.6em 1.25em}
+.login-security .modal .modal-header h2, .youraddress .modal .modal-header h2{font-size: 1.25em;font-weight: 600; color:#000; margin:0}
+.login-security .modal p, .youraddress .modal p{ font-size:0.9em; padding: 0.5em 0; margin: 0;}
+.youraddress .grey-box{height: 225px; margin-bottom:2em; border:#EAEAEA solid 1px; border-radius:4px; color:#222}
+.youraddress .grey-box .address-box-account {
+    padding: 1em 1.4em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+.youraddress .grey-box .address-box-account .address{ margin-bottom:auto}
+.youraddress .grey-box .address-box-account .address .default{ display:none}
+.youraddress .grey-box .address-box-account.default-active .address  .default{ display:block}
+.youraddress .grey-box .address-box-account h4, .login-security .address h4{ font-weight: 600; font-size: 1em; margin-bottom: 0}
+.youraddress .grey-box .address-box-account p{ margin: 0.2em 0}
+.youraddress button[type="submit"]{ min-width: 120px}
+.youraddress .grey-box .address-box-account .default span{ border:#0D97EF solid 1px; font-size:0.7em; padding:0px 2px; color:#0D97EF}
+.youraddress .grey-box.addplus-address{align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;}
+.youraddress .grey-box.addplus-address .address-box-account{margin: 0;
+    height: auto;
+    text-align: center;}
+.youraddress .grey-box.addplus-address .address-box-account h2{ font-size:2.75em; color:#C4C4C4; font-weight: 400; line-height:1}
+.youraddress .grey-box.addplus-address .address-box-account h4{ font-size:1.5em; color:#666666; font-weight: 400}
+.modal-dialog .editadd-box{border:#EAEAEA solid 1px; border-radius:4px; color:#222; padding: 1em; margin: 1em}
+.set-as-default{display:none}
+.set-as-default h4{ font-size:1.125em; font-weight: 600; line-height: 1; margin:0 }
+.set-as-default.active{display:block}
+/*payment options page*/
+.paymentopt .card{ margin-bottom:0.5em; border:#E1E1E1 solid 1px !important; }
+.paymentopt .btn-block {    display: flex;    justify-content: flex-start; color:#666666;}
+.paymentopt .btn-block span img{ margin-right:0.5em;}
+.paymentopt .btn-block .card-name{width:60%}
+.paymentopt .btn-block .card-date{width:35%}
+.paymentopt .btn-block .card-arrow{width:5%; position:relative}
+.paymentopt h2 .btn-block.collapsed .card-arrow:before {
+-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	transform: rotate(135deg);
+	transform-origin: center center;
+	top: 10px;
+}
+.paymentopt h2 .btn-block .card-arrow:before {
+    width: 10px;
+	content:"";
+	position:relative;
+	display:block;
+    height: 10px;
+    border-color: #666;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	transform-origin: center center;
+	top: 15px;
+	transition: 0.2s
+}
+
+
+.paymentopt .card-header{ padding:0.5em;}
+.paymentopt .btn-block.headline {    font-size: 1.2em}
+.paymentopt .card-body{font-size: 0.9em}
+.paymentopt .card-body .callouts button{ margin-right:0.5em; margin-top: 0.5em; color:#666666;}
+.payment-meth .exp-date select{width:90px}
+/*thank you page*/
+.thankyoupage{ background: #F0F9FF; padding: 0;}
+.thankyoupage .content-area{ color:#666666}
+.thankyoupage .content-area p{font-size: 1rem}
+.thankyoupage .content-area ul li{ padding-bottom: 0.5em}
+.thankyoupage .content-area ul li span{ font-family: 'roboto_mediumregular'; width: 110px;  display: inline-block;}
+.thankyoupage .content-area h2{ font-size:1.25em; font-family: 'roboto_mediumregular'; margin-bottom: 1em}
+.thankyoupage .content-area ul{ margin-bottom:0.8em}
+.thankyoupage .content-area ul.contact-details li{ font-size:1.125rem}
+.thankyoupage p{ color:#666666;}
+.thankyoupage  hr{ border-color:#BCE3FC}
+.thankyoupage .activation-time h2{ font-size:1.5em; color:#666666; font-family: 'robotobold'}
+.thankyoupage .activation-time.border-box{ border:#BCE3FC solid 2px; border-radius: 8px; padding:1.2em; margin-left: 4em}
+.thankyoupage .activation-time h4{ font-size:1.25em; color:#666666; margin-top: 0}
+.thankyoupage .icons-top, .thankyoupage .icons-bottom{ position: relative}
+.thankyoupage .icons-top:before {
+    content: "";
+    background: url(../images/thankyou-icon1.png) no-repeat;
+    background-position: left top;
+    width: 251px;
+    height: 354px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+.thankyoupage .icons-top:after {
+    content: "";
+    background: url(../images/thankyou-icon2.png) no-repeat;
+    background-position: right top;
+    width: 238px;
+    height: 175px;
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    z-index: 3;
+}
+.thankyoupage .icons-bottom:before {
+    content: "";
+    background: url(../images/thankyou-icon4.png) no-repeat;
+    background-position: left bottom;
+    width: 158px;
+    height: 150px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+	top:initial;
+    z-index: 3;
+}
+.thankyoupage .icons-bottom:after {
+    content: "";
+    background: url(../images/thankyou-icon3.png) no-repeat;
+    background-position: right top;
+    width: 129px;
+    height: 244px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: inherit;
+    z-index: 3;
+    bottom: 500px;
+}
+#clockdiv{
+	color: #0D97EF;
+	display: inline-block;
+	text-align: center;
+	font-size: 5.125em;
+	line-height: 1.2
+}
+
+#clockdiv > div{
+	padding:5px;
+	border-radius: 3px;	
+	display: inline-block;
+	font-family: 'oswald_regularregular';
+	position: relative;
+	}
+#clockdiv > div:after {
+    content: ":";
+    position: absolute;
+    top: 0;
+    right: -15px;
+}
+#clockdiv > div:last-child:after{display:none}
+#clockdiv div > span{
+	padding: 5px 10px;
+	border-radius: 3px;
+	background: #E3F5FF;
+	display: inline-block;
+	
+}
+.smalltext{
+	padding-top: 5px;
+	font-size: 1.25rem;
+	color:#666666;
+	font-family: 'robotoregular';
+} 
+.thankyoupage .activation-time .progress-bar-striped h4{ font-size:1em; font-family: 'roboto_mediumregular'; color:#0D97EF; margin: 0.5em 0 }
+.thankyoupage .activation-time .progress {   height: 7px;    background-color: #DFF3FF; overflow: visible}
+.thankyoupage .activation-time .progress .progress-bar{ position:relative; overflow: visible; background:#0D97EF; border-radius:0.75rem}
+.thankyoupage .activation-time .progress .progress-bar .circle{ position:absolute; width: 18px; height: 18px; border-radius: 50%; background:#DFF3FF; border:#0D97EF solid 5px;right:-9px}
+.thankyoupage .activation-time .progress .progress-bar .circle span {
+    position: absolute;
+    top: 25px;
+    left: -12px;
+    font-family: 'oswaldmedium';
+    font-size: 10px;
+	color:#666666
+}
+.thankyoupage .recent-activation.border-box{ padding-bottom:3em}
+.thankyoupage .recent-activation hr {
+    margin-top: 2.5em;
+    margin-bottom: 0;
+}
 @media screen and (min-width: 576px){
 .modal-dialog {
     max-width: 800px;
+    margin: 1.75rem auto;
+}
+.login-security .modal-dialog {
+    max-width: 380px;
     margin: 1.75rem auto;
 }
 		}
@@ -1650,6 +1897,26 @@ input#savedcard{ visibility:hidden}
 .order-details .order-items .item-price{text-align: left !important;}	
 .yourorder .box .box-header{flex-wrap: wrap;}
 .yourorder .box .orderid{ margin-top:1em}
+
+	.paymethods {    justify-content: space-evenly;}
+.savedcard .cardbox{justify-content: inherit;
+    align-items: center;
+    flex-wrap: wrap;}
+.savedcard .cardbox .form-check-input {    margin-right: 5px}
+.paymethods .methodbox{min-width: 92px; margin: 5px; padding: 5px; text-align: center}
+	.yourorder .order-box {    display: block;}
+	.btn-block{ flex-direction:column}
+	.youraddress .grey-box {height: 160px}
+.paymentopt .btn-block .card-name {    width: 100%}
+	.paymentopt .btn-block .card-arrow {
+    width: 5%;
+    position: absolute;
+    right: 15px;
+}
+	.sim-plan-benefits .benefit-box{width: 40%;}
+	.thankyoupage .icons-top, .thankyoupage .icons-bottom{ display:none}
+	.thankyoupage .activation-time.border-box{ margin:0}
+	.thankyoupage .content-area ul li span{ width:auto}
 }
 @media (max-width: 576px) { 
 	html{font-size:85%}
@@ -1741,15 +2008,6 @@ input#savedcard{ visibility:hidden}
   display: block;
 }
 }
-@media (max-width: 767px) {
-	.paymethods {    justify-content: space-evenly;}
-.savedcard .cardbox{justify-content: inherit;
-    align-items: center;
-    flex-wrap: wrap;}
-.savedcard .cardbox .form-check-input {    margin-right: 5px}
-.paymethods .methodbox{min-width: 92px; margin: 5px; padding: 5px; text-align: center}
-	.yourorder .order-box {    display: block;}
-	}
 /*
 @media (min-width: 992px) { ... }*/
 @media (min-width:1024px) and (max-width: 1300px) { header nav {    font-size: 1em; }
