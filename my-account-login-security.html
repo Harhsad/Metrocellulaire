@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Metro Cellular - Shopping Cart</title>
+<title>Metro Cellular - Login and Security</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/custom.css">
@@ -86,194 +86,256 @@
 </div>
 
 </header>
+
+
 <main>
-  <div class="breadcrumb">
+
+
+<div class="breadcrumb">
+<div class="container">
+<nav>
+  <ol>
+   <li class="breadcrumb-item"><a href="#">My Account</a></li>
+    <li class="breadcrumb-item active">Login & Security</li>
+  </ol>
+</nav>	
+	
+</div>
+
+	
+</div>
+
+    <div class="main-wrapper">  
+    
+  
+    
+    <div class="login-security">
     <div class="container">
-      <nav>
-        <ol>
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active">Shopping Cart</li>
-        </ol>
-      </nav>
+    <div class="row justify-content-center mt-2">
+    <div class="col-md-12">
+    <div class="brand-description">
+    <h1>Login & Security</h1>  
+    </div></div>
+    </div>
+    <div class="row">
+
+
+
+<div class="col-sm-6 col-lg-8">
+    <div class="grey-box">
+<div class="user-edits">
+<div class="user-title">
+<span>Name:</span>
+<label>Tony Kara</label>
+</div>
+<button type="button" class="btn btn-light" data-toggle="modal" data-target="#name-edits">Edit</button>
+</div> 
+<div class="user-edits">
+<div class="user-title">
+<span>E-mail:</span>
+<label>tkara@mendax.ca</label>
+</div>
+<button type="button" class="btn btn-light" data-toggle="modal" data-target="#email-edits">Edit</button>
+</div>
+<div class="user-edits">
+<div class="user-title">
+<span>Mobile Phone Number:</span>
+<label>+10123654895</label>
+</div>
+<button type="button" class="btn btn-light" data-toggle="modal" data-target="#phone-edits">Edit</button>
+</div>
+<div class="user-edits">
+<div class="user-title">
+<span>Password:</span>
+<label>*******</label>
+</div>
+<button type="button" class="btn btn-light" data-toggle="modal" data-target="#pswd-edits">Edit</button>
+</div>
+</div>
+<button type="submit" class="btn btn-primary" >Done</button>
+</div>
+
+<!-- Modal edit user name -->
+<div class="modal fade" id="name-edits">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">  
+       <h2>Change Your Name</h2>     
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       
+       <div class="row">
+					<div class="col-md-12">
+					<div class="form-group">
+    <label>New Name</label>
+    <input type="text" class="form-control" placeholder="Your Name">
+  </div>
+					
+					<p>If you want to change the name associated with your Amazon customer account, you may do so below. Be sure to click the <strong>Save Changes</strong> button when you are done.</p>
+					<button type="button" class="btn btn-primary">Save Changes</button>
+					</div>						
+					</div>	
+					
+						
+					
+						
+					</div>      
+       
+       
+      </div>
     </div>
   </div>
-  <div class="main-wrapper">
-      <div class="container">
-               <div class="order-details">
-        <div class="row">
-			<div class="col-md-8">
-			<div class="brand-description">
-              <h1>Shopping Cart</h1>
-            </div>
-			<div>
-				<div class="order-items row align-items-start">	
-					
-				<div class="item-img col-sm-2"><figure><img src="images/chatr-sim.jpg" width="100" alt=""/></figure></div>
-					<div class="item-price col-sm-4 text-right order-last"><sup>$</sup>60.00<sup>/mo.</sup></div>	
-				<div class="item-description col-sm-6">
-					
-					<h2>CHATR Multi SIM Card Nano Micro Regular</h2>
-<p><strong>Travel / No Plan</strong></p>
-<p><strong>Parts Number - 02154585</strong></p>
-				
-				
-				<div class="additems mt-5">
-				
-														
-				<div class="qty">
-                        <span class="minus">-</span>
-                        <input type="number" class="count text-center" name="qty" value="1">
-                        <span class="plus">+</span>
-                    </div>
-                    
-                   <div class="removeitems"><button type="button" class="btn btn-link">Remove</button></div> 
-                    
-					
-					
-				</div>
-				
-				
-				
-				</div>
-					
-						
-				</div>
-				<div class="order-items row align-items-start">	
-					
-				<div class="item-img col-sm-2"><figure><img src="images/pre-sim3.jpg" width="100" alt=""/></figure></div>
-					<div class="item-price col-sm-4 text-right order-last"><sup>$</sup>45.00<sup>/mo.</sup></div>	
-				<div class="item-description col-sm-6">
-					
-					<h2>Public Mobile Pre-Activated $15</h2>
-<p><strong>Talk-Text</strong></p>
-<p><strong>SIM Number - +1 888 888 8888</strong></p>
-				
-				
-				<div class="additems mt-5">
-				
-														
-				<div class="qty">
-                        <span class="minus">-</span>
-                        <input type="number" class="count text-center" name="qty" value="1">
-                        <span class="plus">+</span>
-                    </div>
-                    
-                   <div class="removeitems"><button type="button" class="btn btn-link">Remove</button></div> 
-                    
-					
-					
-				</div>
-				
-				
-				
-				</div>
-					
-						
-				</div>
-				<div class="order-items row align-items-start">	
-					
-				<div class="item-img col-sm-2"><figure><img src="images/publicmobile-$15-recharge.jpg" width="100" alt=""/></figure></div>
-					<div class="item-price col-sm-4 text-right order-last"><sup>$</sup>55.00<sup>/mo.</sup></div>	
-				<div class="item-description col-sm-6">
-					
-					<h2>Public Mobile $15</h2>
-<p><strong>100 Minutes canada wide minutes</strong></p>
-<p><strong>SIM Number - +1 888 888 8888</strong></p>
-				
-				
-				<div class="additems mt-5">
-				
-														
-				<div class="qty">
-                        <span class="minus">-</span>
-                        <input type="number" class="count text-center" name="qty" value="1">
-                        <span class="plus">+</span>
-                    </div>
-                    
-                   <div class="removeitems"><button type="button" class="btn btn-link">Remove</button></div> 
-                    
-					
-					
-				</div>
-				
-				
-				
-				</div>
-					
-						
-				</div>
-				<div class="order-items row align-items-start">	
-					
-				<div class="item-img col-sm-2"><figure><img src="images/luckymobile-carrier.jpg" width="100" alt=""/></figure></div>
-					<div class="item-price col-sm-4 text-right order-last"><sup>$</sup>65.00<sup>/mo.</sup></div>	
-				<div class="item-description col-sm-6">
-					
-					<h2>Public Mobile Voucher</h2><br>
-
-<p><strong>SIM Number - +1 888 888 8888</strong></p>
-				
-				
-				<div class="additems mt-5">
-				
-														
-				<div class="qty">
-                        <span class="minus">-</span>
-                        <input type="number" class="count text-center" name="qty" value="1">
-                        <span class="plus">+</span>
-                    </div>
-                    
-                   <div class="removeitems"><button type="button" class="btn btn-link">Remove</button></div> 
-                    
-					
-					
-				</div>
-				
-				
-				
-				</div>
-					
-						
-				</div></div>
-			</div>
-      <div class="col-md-4">
-        <div class="order-summary">
-         <h2>Order Summary</h2>
-          <div class="summary-box">
-          	<div class="row">
-          	<div class="col-8">Subtotal (2 Items)</div> <div class="col-4 align-self-end text-right">$60.00</div>
-          	</div>
-          	<div class="row">
-          	<div class="col">Shipping</div> <div class="col align-self-end text-right">To be calculated</div>
-          	</div>  
-          	<hr />
-          	<div class="row">
-          	<div class="col">TPS/GST</div> <div class="col align-self-end text-right">To be calculated</div>
-          	</div> 
-          	<div class="row">
-          	<div class="col">TVQ/PST</div> <div class="col align-self-end text-right">To be calculated</div>
-          	</div>         	
-          	<div class="summary-total mt-3">
-          	<div class="row">
-          	<div class="col">TOTAL</div> <div class="col align-self-end text-right">$60.00</div>
-          	</div>
-          	</div>
-          </div>        
-          
-        </div>
-        <div class="row">
-          	<div class="col">
-          	<div class="step-btn text-center justify-content-center m-4">
-              <button type="submit" class="btn btn-primary col-12">CHECKOUT</button>
-            </div>
-        </div>
-          	</div> 
-        </div></div>
+  
+<!-- Modal change user id -->
+<div class="modal fade" id="email-edits">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">  
+       <h2>Change your email address</h2>     
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      
-      
-      </div>
+      <div class="modal-body">
+       
+       <div class="row">
+					<div class="col-md-12">
+	<div class="user-title">
+<span>Current email address: </span>
+<label>tkara@mendax.ca</label>
+</div>
+					
+					<p>Enter the new email address you would like to associate with your account below. We will send a One Time Password (OTP) to that address.</p>
+					<div class="form-group mb-0 pt-2">
+    <label>New email address</label>
+    <input type="text" class="form-control" placeholder="New email address">
   </div>
+					<button type="button" class="btn btn-primary">Save Changes</button>
+					</div>						
+					</div>	
+					
+						
+					
+						
+					</div>      
+       
+       
+      </div>
+    </div>
+  </div>
+
+<!-- Modal change user phone -->
+<div class="modal fade" id="phone-edits">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">  
+       <h2>Change Mobile Number</h2>     
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       
+       <div class="row">
+					<div class="col-md-12">
+	<div class="user-title mb-4">
+<span>Old mobile number: </span>
+<label>+10123654895</label>
+</div>
+		<div class="form-group mb-0">
+    <label>Mobile number</label>
+    <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">CA +1</div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="">
+  </div>		
+				<p>By enrolling your mobile phone number, you consent to receiving automated security notifications via text message from Amazon. You can opt out by removing your mobile number on the Login & Security page located in Your Account settings. Message and data rates may apply.</p>
+					
+					<button type="button" class="btn btn-primary">Save Changes</button>
+					</div>						
+					</div>	
+					
+						
+					
+						
+					</div>      
+       
+       
+      </div>
+    </div>
+  </div>
+		</div>
+
+
+
+<!-- Modal change user password -->
+<div class="modal fade" id="pswd-edits">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">  
+       <h2>Change Password</h2>     
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       
+       <div class="row">
+					<div class="col-md-12">
+					<p>Use the form below to change the password for your Metro Cellular account</p>
+	
+		<div class="form-group mb-1 mt-1">
+    <label><b>Current password:</b></label>
+    <input type="text" class="form-control" placeholder="">
+  </div>
+						<div class="form-group mb-1">
+    <label><b>New password:</b></label>
+    <input type="text" class="form-control" placeholder="">
+  </div>
+			<div class="form-group mb-0">
+    <label><b>Reenter new password:</b></label>
+    <input type="text" class="form-control" placeholder="">
+  </div>
+				
+					
+					<button type="button" class="btn btn-primary">Save Changes</button>
+					</div>						
+					</div>	
+					
+						
+					
+						
+					</div>      
+       
+       
+      </div>
+    </div>
+  </div>
+</div>  
+
+ 
+    </div>
+    </div>
+    
+    
+    
+    
+    </div>
+
+
+
+
+
+	
+	
 </main>
+
+
 <footer>
 <section class="newsletter">
 <div class="container"><div class="row">
@@ -369,11 +431,12 @@ Montréal Quebec H2Y1A3</li>
 <section class="copyright"><p>Copyright © 2021 Metro Cellulaire Ltd. All Rights Reserved.</p></section>
 	
 </footer>
+
 <script>
 	
 		
 		jQuery(document).ready(function($){
-  you can now use $ as your jQuery object.
+  //you can now use $ as your jQuery object.
   $(".panel-heading").click(function() {
     $(this).parent().addClass('active').find('.panel-body').slideToggle('fast');
     $(".panel-heading").not(this).parent().removeClass('active').find('.panel-body').slideUp('fast');
@@ -383,16 +446,16 @@ Montréal Quebec H2Y1A3</li>
 		
 });
 	</script>
-<script>
+	<script>
 window.onscroll = function() {myFunction()};
 
- Get the header
+// Get the header
 var header = document.getElementById("header");
 
- Get the offset position of the navbar
+// Get the offset position of the navbar
 var sticky = header.offsetTop;
 
- Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
@@ -401,24 +464,6 @@ function myFunction() {
   }
 }
 	</script>
-	
-<!--plus minus button jquery-->
-<script>
-	$(document).ready(function(){
-		    $('.count').prop('disabled', true);
-   			$(document).on('click','.plus',function(){
-				$('.count').val(parseInt($('.count').val()) + 1 );
-    		});
-        	$(document).on('click','.minus',function(){
-    			$('.count').val(parseInt($('.count').val()) - 1 );
-    				if ($('.count').val() == 0) {
-						$('.count').val(1);
-					}
-    	    	});
- 		});
-	</script>
-	
 
-<body>
 </body>
 </html>
