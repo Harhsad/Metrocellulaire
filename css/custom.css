@@ -754,7 +754,7 @@ ul.bullets li::marker {
 .order-details .order-items .item-price sup{ font-family: 'oswald_regularregular'; font-size: 60%; top: -0.6em;}
 .order-details .order-summary{font-family: 'robotoregular';  border-radius: 4px; background: #F4F4F4}
 .order-details .order-summary h2{ /*text-transform: uppercase;*/padding: 0.5em;  font-size: 1.875em; font-family: 'oswaldmedium'; border-bottom:#e1e1e1 solid 1px}
-.order-details .order-summary .summary-box{ font-size:1em; color:#666}
+.order-details .order-summary .summary-box{ font-size:1em; color:#666; padding: 0; margin: 0;}
 .order-details .order-summary .summary-box > div { padding: 0 1rem;}
 .order-details .order-summary .summary-box .summary-total{font-family: 'oswaldmedium'; color:#222; font-size:1.25em; padding: 0.5rem 1rem; background:#e1e1e1}
 .additems .qty{ background: #f4f4f4; border-radius: 30px; max-width: 120px; text-align: center}
@@ -1089,6 +1089,14 @@ b{font-family: 'robotobold';}
 .thankyoubox .content{ margin:1em 0}
 .thankyoubox p{ margin-bottom: 0; font-size:1.125em; color: #666}
 /*topups*/
+.topup-voucherpage{ background:url("../images/voucher-pic2.jpg") no-repeat right 145px;}
+img.topup-visual {
+    position: absolute;
+    right:150px;
+    top: 200px;
+    z-index: 10;
+	width: 35vw
+}
 .topup-form .text-center input{ text-align: center}
 .topup-form .form-check-label{ color:#666}
 .topup-process {
@@ -1130,13 +1138,13 @@ b{font-family: 'robotobold';}
     align-items: center;
     justify-content: center;}
 
-/*.summary-box{ background: #f4f4f4; padding: 1em; border-radius: 8px; margin-bottom: 2em}
+.summary-box{ background: #f4f4f4; padding: 1em; border-radius: 8px; margin-bottom: 2em}
 .summary-box h2{ color:#222222; font-size:1.25em; font-family: 'robotobold'}
 .summary-box hr {    margin: 1em 0;    border-top: #3eb1df solid 2px}
 .summary-box-line{ border-bottom: #e3e3e3 solid 1px; padding: 7px 0}
 .summary-box-line:last-child{ border:none}
 .summary-box .title{ color:#666666; font-size:1.125em}
-.summary-box .desc{ color:#666666; font-size:1.125em; font-family: 'robotobold';}*/
+.summary-box .desc{ color:#666666; font-size:1.125em; font-family: 'robotobold';}
 .summary-box button{ color:#666666; font-size:1em; background:#e9e9e9; border-radius: 4px; position: relative; border:none; padding-right:15px; display: flex;
     margin-left: auto;}
 .summary-box button:after {
@@ -1170,6 +1178,35 @@ b{font-family: 'robotobold';}
 .carrier-plan-box hr{ border-top:#f4f4f4 solid 2px; margin: 0.3rem 0}
 .carrier-list h2{ text-align:center; font-family: 'robotobold'; font-size: 2.25em; margin: 1.5em 0 1em 0}
 .carrier-list figure {    box-shadow: rgb(214 214 214) 1px 1px 5px; margin-bottom: 2em}
+.info-modal {
+    position: absolute;
+    background: #fff;
+    border-radius: 4px;
+    padding: 25px;
+    border: #cccccc solid 1px;
+    box-shadow: rgb(214 214 214) 0px 1px 7px;
+    top: 0;
+    min-width: 270px;
+    z-index: 1;
+	display:none
+}
+.info-modal.active{ display:block}
+.info-modal ul li {
+    list-style: disc;
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    color: #666666;
+}
+.info-modal h2 {
+    display: flex;
+    justify-content: space-between;
+}
+.info-modal h2 a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 100 !important;
+}
 .sim-note a{ text-decoration:underline; color: #2d9bc7}
 .simcards .phone-box button{border: #3eb1df solid 2px;
     color: #000;
@@ -1917,6 +1954,7 @@ input#savedcard{ visibility:hidden}
 	.thankyoupage .icons-top, .thankyoupage .icons-bottom{ display:none}
 	.thankyoupage .activation-time.border-box{ margin:0}
 	.thankyoupage .content-area ul li span{ width:auto}
+	
 }
 @media (max-width: 576px) { 
 	html{font-size:85%}
@@ -2011,3 +2049,9 @@ input#savedcard{ visibility:hidden}
 /*
 @media (min-width: 992px) { ... }*/
 @media (min-width:1024px) and (max-width: 1300px) { header nav {    font-size: 1em; }
+	@media (max-width: 1199px) {
+		img.topup-visual { display:none}
+	.topup-voucherpage{ background:none}
+
+		}
+	
