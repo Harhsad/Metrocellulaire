@@ -55,7 +55,11 @@ jQuery('.form-check-input').click(function(){
 		  $("button.luckymobile-card").addClass("active");
 		  $("button.publicmobile-card").removeClass("active");
   });
-
 	
+	/*top up vochers page*/
+	$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+	$('#example').tooltip(options)
 			
 });
