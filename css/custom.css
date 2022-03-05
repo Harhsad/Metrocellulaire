@@ -67,9 +67,11 @@ a, a:hover{ color:inherit; text-decoration:none}
 main {
   flex: 1 0 auto;
 }
+.btn-link {    color: #0D97EF}
 footer {
   flex-shrink: 0;
 }
+.small, small{ font-size:90%}
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #a3a3a3 !important;
   opacity: 1; /* Firefox */
@@ -462,11 +464,11 @@ position:relative
 ul.bullets li{     padding: 0 0 0.4em 0;
     list-style-type: disc;
     list-style-position: outside;
-    margin:0 0 0 1.2em}
+    margin:0 0 0 1.2em; color: #666;}
 ul.bullets li::marker {
     font-size: 1.3em;
 }
-.content p{ font-size:1.125rem}
+.content p{ font-family: 'robotoregular'; font-size:1em; line-height:1.8; color:#666666}
 .content h4{ margin-top: 1em}
 .accordion-faqs{ margin-bottom: 2em}
 .accordion-faqs .panel-body {
@@ -547,23 +549,6 @@ ul.bullets li::marker {
 	text-transform: uppercase
 }
 .simcards .brand-description h2{font-family: 'oswald_regularregular'; font-size: 2.25em}
-.login-form form{ border:#c2c2c2 solid 1px; border-radius:10px; margin: 3em 0; padding: 3em 2em;}
-.login-form h2{ text-align:center; color:#04a7f3; font-size: 2.25em; margin-bottom: 1em}
-.login-form button {
-    text-align: center;
-    margin: 1em auto;
-    display: flex;
-    padding: 0.7em 3.5em;
-}
-.login-form .form-check label{ color:#666}
-.login-form .login-options {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-}
-.login-form .login-options a{color:#666666; font-family: 'robotobold'; text-decoration: underline}
-.login-form input.form-control{ border-radius:0; border-width:0 0 1px 0}
 .account-details{border:#c2c2c2 solid 1px; border-radius:10px; margin: 1em 0; padding: 0}
 .account-details .btn{ border-radius:4px; background: #ebebeb; color: #000; font-family: 'robotoregular'; text-transform: capitalize}
 .account-details .details-edit {
@@ -1913,6 +1898,30 @@ input#savedcard{ visibility:hidden}
     margin-top: 2.5em;
     margin-bottom: 0;
 }
+
+/*sign in page*/
+.login-form form{ border:#EAEAEA solid 1px; border-radius:4px; margin: 0; padding: 2em;}
+.login-form h2{ color:#000; font-size: 1.5em; font-family: 'roboto_mediumregular';margin-bottom: 0.5em}
+.login-form .form-check label{ color:#666}
+.login-form .login-options {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+.login-form .login-options a{color:#666666; font-family: 'robotobold'; text-decoration: underline}
+.login-form input.form-control, .login-form .input-group-prepend{ border-radius:0; height: 34px}
+.login-form .input-group-text{ background:none; border-radius:0}
+.login-form label{font-family: 'robotobold'; color:#666666}
+.login-form p, .login-form .form-check label{ color:#666666; font-size:0.9rem; font-family: 'robotoregular';}
+.login-form p a{ color:#0D97EF}
+.create-account p.line, .create-account p{ font-size:1rem; position: relative}
+.create-account p.line:before{ content:""; width: 100%; height:1px; background:#EAEAEA; position:absolute; left:0; top: 10px; z-index: 0}
+.create-account p.line span{ background:#fff; padding: 0 10px; z-index: 1; position: relative}
+.font-weight-normal{font-family: 'robotoregular' !important;}
+
+/*end*/
+
 @media screen and (min-width: 576px){
 .modal-dialog {
     max-width: 800px;
@@ -2048,7 +2057,8 @@ input#savedcard{ visibility:hidden}
 }
 /*
 @media (min-width: 992px) { ... }*/
-@media (min-width:1024px) and (max-width: 1300px) { header nav {    font-size: 1em; }
+@media (min-width:1024px) and (max-width: 1300px) { 
+	header nav {    font-size: 1em; }}
 	@media (max-width: 1199px) {
 		img.topup-visual { display:none}
 	.topup-voucherpage{ background:none}
