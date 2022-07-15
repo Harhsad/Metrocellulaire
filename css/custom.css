@@ -1861,7 +1861,7 @@ input#savedcard{ visibility:hidden}
 	.carrier-plan.topups-voucher .plans-heading figure {    margin: 0 0 1rem;}
 	.step-btn.addtocart {  justify-content: flex-start; }
 	.carrier-plan.topups-voucher .topups-voucher-container {    gap: 10px;    row-gap: 0px;}
-	.carrier-plan.topups-voucher .topups-voucher-container .carrier-plan-box{font-size: 0.9em;}
+	.carrier-plan.topups-voucher .topups-voucher-container .carrier-plan-box{font-size: 0.8em;}
 }
 /*
 @media (min-width: 992px) { ... }*/
