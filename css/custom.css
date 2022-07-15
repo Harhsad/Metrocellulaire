@@ -1842,6 +1842,10 @@ input#savedcard{ visibility:hidden}
 }
 	
 	
+
+	.carrier-plan.topups-voucher .plans-heading{ display:block}
+	.carrier-plan.topups-voucher .plans-heading figure {    margin: 0 0 1rem;}
+	.step-btn.addtocart {    display: flex;    justify-content: flex-start;    align-items: center;}
 }
 @media (min-width: 768px) {
 	.navbar .dropdown:hover>.dropdown-menu {
