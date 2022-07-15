@@ -1747,11 +1747,12 @@ input#savedcard{ visibility:hidden}
 @media screen and (min-width:1200px){ 
 	.container{ max-width: 1250px}
 }
+@media screen and (max-width:1268px){.carrier-plan.topups-voucher .topups-voucher-container .carrier-plan-box{min-width: auto}}
 @media screen and (max-width: 767px) { 
 	.thankyoubox{width:95%}
 	.payment-options .payment-box .details{ padding:0.8em 0.5em; font-size: 85%}
 	.payment-options .payment-box .details > div:after{ display:none}
-	.payment-options .payment-box .details > div{ width: 33% !important}}
+	.payment-options .payment-box .details > div{ width: 33% !important}
 .order-details .order-items .item-price{text-align: left !important;}
 .yourorder .order-box {    display: block;}
 .yourorder .box .box-header{flex-wrap: wrap;}
