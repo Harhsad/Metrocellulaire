@@ -220,13 +220,14 @@ position:relative
     border: none
 }
 .newsletter .btn-primary {
-    margin: 0;
+    margin: 0px;
     position: absolute;
-    right: 0;
-	background: #252525;
-	color:#fff;
-	padding: 0.8em 3em;
-	z-index: 1
+    right: -2px;
+    background: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+    padding: 0.8em 3em;
+    z-index: 1;
+    border-radius: 30px;
 }
 .top_footer{ background: #252525; padding: 1.5em 0}
 .top_footer h1{ color: #fff; font-size: 2.25em; font-family: 'oswaldlight';  }
@@ -1160,119 +1161,6 @@ b{font-family: 'robotobold';}
 .carrier-list h2{ text-align:center; font-family: 'robotobold'; font-size: 2.25em; margin: 1.5em 0 1em 0}
 .carrier-list figure {    box-shadow: rgb(214 214 214) 1px 1px 5px; margin-bottom: 2em}
 
-/*topups page*/
-.carrier-plan.topups-voucher{ padding: 1em 2em 0 2em}
-.carrier-plan.topups-voucher .topups-voucher-container{display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-    row-gap: 10px;}
-.carrier-plan.topups-voucher .topups-voucher-container .carrier-plan-box {
-    border: #cccccc solid 1px;
-    border-radius: 4px;
-    box-shadow: inherit;
-    padding: 0.3em 1em;
-    margin: 1em 0 0;
-    position: relative;
-    min-width: 215px; opacity:0.65
-}
-.carrier-plan.topups-voucher .topups-voucher-container .carrier-plan-box:hover{ border-color:#0D97EF; opacity:1}
-.carrier-plan.topups-voucher .topups-voucher-container .carrier-plan-box.selected{ border-color:#0D97EF; opacity:1; position:relative}
-.carrier-plan.topups-voucher .topups-voucher-container .carrier-plan-box.selected:before {
-    content: "";
-    background: url(../images/topups-checked.png) no-repeat;
-    display: block;
-    width: 30px;
-    height: 20px;
-    position: absolute;
-    right: 0px;
-}
-.carrier-plan.topups-voucher .plans-heading{display:flex; justify-content: space-between;  align-items: end;}
-.carrier-plan.topups-voucher .plans-heading h2{ font-size:1.5em}
-.carrier-plan.topups-voucher .plans-heading figure{margin-bottom: 0}
-.carrier-plan.topups-voucher .addtocart button.btn{ border-radius: 0; border:none; text-transform: uppercase; font-family: 'roboto_mediumregular'; padding: 0.9em 1.2em; background: #DFF3FF; color:#0D97EF; position: relative; font-size:0.875em; margin: 2em 0}
-.carrier-plan.topups-voucher .addtocart button.btn:after {
-    content: "";
-    border: #0D97EF solid;
-    border-width: 2px 2px 0 0;
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    transform: rotate(45deg);
-    margin-left: 5px;
-}
-.carrier-plan.topups-voucher .addtocart button.btn.selected{font-family: 'robotoregular'; text-transform: inherit;}
-.carrier-plan.topups-voucher .addtocart button.btn.selected .voucher {
-    position: absolute;
-    top: -7px;
-    background: #0D97EF;
-    border-radius: 20px;
-    color: #fff;
-    padding: 0 8px;
-	font-size: 0.75em;
-}
-.carrier-plan.topups-voucher .addtocart button.btn.selected .price{text-transform: uppercase; font-family: 'roboto_mediumregular';}
-.carrier-plan.topups-voucher .addtocart button.btn.selected .price strong {
-    color: #222222;
-    font-size: 1.375em;
-	font-family: 'robotoregular';
-}
-.carrier-plan.topups-voucher .addtocart button.btn.selected .price strong.line-devide {
-    font-family: 'robotoregular';
-    margin: 0 5px;
-    display: inline-flex;
-    /* width: 0.5px; */
-    border-right: #0D97EF solid 1px;
-    text-indent: -999px;
-    overflow: hidden;
-}
-.carrier-plan.topups-voucher .addtocart button.btn.selected .price strong small{font-size: 0.75em;}
-.carrier-plan.topups-voucher .carrier-plan-box p{ margin:0; padding: 0; font-size: 0.875em;}
-.carrier-plan.topups-voucher .topups-voucher-container .carrier-plan-box .total-amt{font-family: 'robotobold'; color: #666666}
-.carrier-plan.topups-voucher .alert-icon {
-    background: #F6C628;
-    border-radius: 30px;
-    color: #fff;
-    padding: 0;
-    border: none;
-    width: 13px;
-    height: 13px;
-    text-align: center;
-    align-items: center;
-    line-height: 1;
-    margin-right: 5px;
-    font-size: 13px;
-}
-.carrier-plan.topups-voucher .alert-data.active{ display: block}
-.carrier-plan.topups-voucher .alert-data {
-    position: absolute;
-	display: none;
-    border: #e3e3e3 solid 1px;
-    padding: 5px 10px;
-    z-index: 99;
-    background: #fff;
-    border-radius: 4px;
-    font-family: 'robotoregular';
-    font-size: 12px;
-}
-.alert-data:before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 0;
-    background: #fff;
-    border-color: #e3e3e3;
-    border-style: solid;
-    border-width: 1px 1px 0 0;
-    transform: rotate(-45deg);
-    top: -5px;
-}
-
-
-/*end*/
-
-
 .sim-note a{ text-decoration:underline; color: #2d9bc7}
 .simcards .phone-box button{border: #3eb1df solid 2px;
     color: #000;
@@ -1747,7 +1635,6 @@ input#savedcard{ visibility:hidden}
 @media screen and (min-width:1200px){ 
 	.container{ max-width: 1250px}
 }
-@media screen and (max-width:1268px){.carrier-plan.topups-voucher .topups-voucher-container .carrier-plan-box{min-width: auto}}
 @media screen and (max-width: 767px) { 
 	.thankyoubox{width:95%}
 	.payment-options .payment-box .details{ padding:0.8em 0.5em; font-size: 85%}
@@ -1854,14 +1741,8 @@ input#savedcard{ visibility:hidden}
     flex-wrap: wrap;}
 .savedcard .cardbox .form-check-input {    margin-right: 5px}
 .paymethods .methodbox{min-width: 92px; margin: 5px; padding: 5px; text-align: center}
-	
 
-	.carrier-plan.topups-voucher {  padding: 1em 1em 0 1em;}
-	.carrier-plan.topups-voucher .plans-heading{ display:block}
-	.carrier-plan.topups-voucher .plans-heading figure {    margin: 0 0 1rem;}
-	.step-btn.addtocart {  justify-content: flex-start; }
-	.carrier-plan.topups-voucher .topups-voucher-container {    gap: 10px;    row-gap: 0px;}
-	.carrier-plan.topups-voucher .topups-voucher-container .carrier-plan-box{font-size: 0.9em;}
+
 }
 /*
 @media (min-width: 992px) { ... }*/
