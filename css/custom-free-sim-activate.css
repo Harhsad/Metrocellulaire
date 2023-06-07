@@ -1,0 +1,30 @@
+/*free sim activate page*/
+.brand-description.free-sim h1{  border: none;}
+.brand-description.free-sim h1 span{ color: #0D97EF;}
+.free-sim .btn.large {
+    font-size: 1.25em;
+    padding: 0.5em 1em;
+    margin: 0 0 1em 0;
+}
+.autorize {
+    border-bottom: #EFEFEF solid 1px;
+    margin: 1em 0 2em 0;
+    padding: 0 0 2em 0;
+}
+.autorize ul li{ display: inline-flex; flex-direction: column; justify-content: space-between; margin: 0 0.5em;}
+.autorize ul li img{height: 60px;}
+.autorize p.large{ font-size: 1.5em; color: #6C757D;}
+.autorize p.large span{ color:#0D97EF; font-weight: 600;}
+.notes p{ font-size: 1.25em;}
+.notes a{ color:#0D6EFD}
+/*end*/
+
+@media screen and (max-width:1268px){.carrier-plan.topups-voucher .topups-voucher-container .carrier-plan-box{min-width: auto}}
+@media (max-width: 767px) {
+	.carrier-plan.topups-voucher {  padding: 1em 1em 0 1em;}
+	.carrier-plan.topups-voucher .plans-heading{ display:block}
+	.carrier-plan.topups-voucher .plans-heading figure {    margin: 0 0 1rem;}
+	.step-btn.addtocart {  justify-content: flex-start; }
+	.carrier-plan.topups-voucher .topups-voucher-container {    gap: 10px;    row-gap: 0px;}
+	.carrier-plan.topups-voucher .topups-voucher-container .carrier-plan-box{font-size: 0.9em;}
+}
