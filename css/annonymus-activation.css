@@ -1,0 +1,25 @@
+/*annonymus activation*/
+.annonymus-activation{background: #3C3C3C; padding: 5em 0;}
+.annonymus-activation .brand-description h1{border: none; color: #fff; font-size: 5em;}
+.annonymus-activation .brand-description h1 span{ color: #0D97EF;}
+.annonymus-activation .brand-description h4{ color: #727272; font-family: 'oswald_regularregular'; font-size: 2.25em;}
+.annonymus-activation .brand-description  p{ font-size:1.5em; color: #fff; line-height: 1.8em;}
+.annonymus-activation .annonymus-form{ margin: 2em auto 1em auto; background: #282828; padding: 3em 5em; border-radius: 30px;}
+.annonymus-activation .annonymus-form .linebox{background: none; color:#fff}
+.annonymus-activation .annonymus-form h4{ color: #fff; font-family: 'oswald_regularregular'; font-size: 2.25em; margin:0 0 0.5em 0 ;}
+.annonymus-activation .annonymus-form .step-btn a{ color:#fff}
+.annonymus-activation .annonymus-form input{ background: none; border-color:#fff; color:#fff}
+.annonymus-activation .annonymus-form .form-group{ margin-bottom: 2em;}
+
+@media screen and (max-width: 767px) { 
+.annonymus-activation br{display: none;}
+.annonymus-activation{padding: 1em 0;}
+.annonymus-activation .brand-description h1{border: none; color: #fff; font-size: 2.5em;}
+.annonymus-activation .brand-description h1 span{ color: #0D97EF;}
+.annonymus-activation .brand-description h4{ color: #727272; font-family: 'oswald_regularregular'; font-size: 2em;}
+.annonymus-activation .brand-description  p{ font-size:1em; color: #fff; line-height: 1.8em;}
+.annonymus-activation .annonymus-form{ margin: 0.5em auto; background: #282828; padding: 1.5em; border-radius: 30px;}
+.annonymus-activation .annonymus-form h4{ font-size: 2.0em;}
+.annonymus-activation .annonymus-form .form-group{ margin-bottom: 1em;}
+.annonymus-activation .brand-description img{width: 20%;}
+}
