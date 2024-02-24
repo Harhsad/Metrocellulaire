@@ -1600,9 +1600,6 @@ input#savedcard{ visibility:hidden}
 	display:none
 }
 .togglebox.active{ display:block}
-#allupdates .days p.title{}
-#allupdates .days ul li{}
-#allupdates .days {}
 #allupdates .days ul {
     display: flex;
     align-items: center;
@@ -1637,9 +1634,58 @@ input#savedcard{ visibility:hidden}
 .annonymus-activation .annonymus-form input{ background: none; border-color:#fff; color:#fff}
 .annonymus-activation .annonymus-form .form-group{ margin-bottom: 2em;}
 
+/*sim card status*/
+.text-red{ color: #DF4759; font-size: 1em}
+.text-blue{ color: #007FCC !important;}
+.text-purple{ color:#7C1366}
+.simstatus main{background: url("../images/status-line-bg.jpg") no-repeat right bottom;}
+.simstatus h1{border-bottom: none; margin-bottom: 0;}
+.simstatus .contact-form-details .contact-form{ background: #E3F5FF; box-shadow: none; border-radius: 6px;}
+.simstatus .contact-form-details .contact-form label{ font-family: 'robotoregular';}
+.simstatus .contact-form-details .contact-form input{background: none; border-color:#666; border-radius: 6px; margin-bottom: 0.3em;}
+.simstatus .contact-form-details .contact-form h4{font-family: 'robotobold'; color: #555;}
+.simstatus .contact-form-details .contact-form .btn-primary, .simstatus-details .more-info .btn-primary{ text-transform: uppercase; font-size: 1em; border-radius: 30px; padding: 0.5em 1.5em; margin: 0 0 1em 0;}
+.used-info h4{ margin-bottom: 1em; color: #666;}
+.used-info ul li{ margin-bottom: 0.5em; font-size: 1.125em; color: #666;}
+.simstatus.simstatus-details main{ background: none;}
+.simstatus-details{ position: relative; z-index: -1;}
+.simstatus-details:before{ position: absolute; content: ""; background: url("../images/ellipse-left.svg") no-repeat left 70%; width: 100%; height: 100%; z-index: -1;}
+.simstatus-details:after{ position: absolute; content: ""; background: url("../images/ellipse-right.svg") no-repeat right -380px; width: 100%; height: 100%; z-index: -1}
+.simstatus-details .contact-form-details .contact-form{ background: #E3F5FF; box-shadow: none; border-radius: 6px 6px 0 0;}
+.simstatus-details .contact-form-details .contact-form.used-info{border-radius: 6px}
+.simstatus-details .info-found{ border: #fff solid 1px; background:rgba(255, 255, 255, 0.5); border-top: none; height: 100%; border-radius: 0 0 6px 6px; padding: 1em; font-size: 1.25em; color: #666666;
+display: flex; justify-content:space-evenly; flex-direction: column;}
+.simstatus-details .info-found li{font-family: 'robotobold'; display: flex;}
+simstatus-details .info-found li span {
+    min-width: 42%;
+    width: auto;
+}
+.simstatus-details .info-order {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.simstatus-details .more-info{ font-size: 1.25em; color:#666; margin:2em 0 1em 0}
+.simstatus-details .more-info a{ text-decoration: underline; color: #0014CC;}
+.simstatus-details hr {
+    border: #DDDDDD solid 1px;
+    margin: 0 0 2em 0;
+    display: flex;
+    width: 100%;
+}
+.simstatus-details .links a{ text-decoration: underline; color: #007AFF; margin-bottom: 1em; display: flex; font-size: 1.125em;}
+.simstatus-details .email-mand label.alert {
+    position: absolute;
+    right: 25px;
+    color: #DF4759;
+    font-size: 0.8em;
+}
+.simstatus-details .email-mand input{ border-width:0 0 1px 0; border-rad}
+.simstatus-details .email-mand .custom-control{ margin: 0;}
 
 
-/****/
+
+/**Responsive**/
 @media screen and (min-width: 576px){
 .modal-dialog {
     max-width: 800px;
@@ -1769,4 +1815,6 @@ input#savedcard{ visibility:hidden}
 	}
 /*
 @media (min-width: 992px) { ... }*/
-@media (min-width:1024px) and (max-width: 1300px) { header nav {    font-size: 1em; }
+@media (min-width:1024px) and (max-width: 1300px) { 
+    header nav {    font-size: 1em; }
+}
