@@ -1,0 +1,82 @@
+.linebox{
+    padding: 2em 2em 1em 2em;
+}
+.linebox .anomynous {
+    border: #D6D6D6 solid 1px;
+    border-radius: 6px;
+    padding-bottom: 0.5em
+}
+.remain-anonymus{ background: #F9F9F9;
+    padding: 1.5em 1em;
+    border-bottom: #D6D6D6 solid 1px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px; position: relative}
+    .phone-anonymus{ border: #D6D6D6 solid 1px; border-radius: 6px;}
+.linebox .anomynous .heading {  margin: 0 0 0.5em 0; }
+.remain-anonymus .or{ border: #D6D6D6 solid 1.5px;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    line-height: 2.2;
+    font-family: 'robotobold'; background: #F9F9F9; color: #222222;
+    font-size: 0.875em;
+    position: absolute;
+    bottom: -15px;}
+    .linebox .registration-info {
+        padding: 0 1em;
+    }
+    .step-btn .btn-primary {
+        text-transform: uppercase;
+        font-size: 1em;
+        border-radius: 30px;
+        padding: 0.8em 1.5em;
+        margin: 0 0 1em 0;
+        font-family: 'roboto_mediumregular';
+    }
+    .remain-anonymus.amazon-purchase{background: #fff;}
+    .remain-anonymus.amazon-purchase .heading{display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5em;}
+    .remain-anonymus.amazon-purchase .heading h2{ font-size: 1.125em;}
+    .input-order {
+        font-size: 1.5em;
+        letter-spacing: 4px;
+        color: #666666;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.6em;
+        margin-top: 0.3em
+    }
+    .remain-anonymus.amazon-purchase p{color: #666666; margin-bottom: 0.5em;}
+    .input-order .last-number {
+        width: 130px;
+        display: flex;
+        align-items: center; border: #007AFF solid 2px; border-radius: 6px;  letter-spacing: 4px;
+    }
+    .order-example span{ border: #DF4759 solid 1px; border-radius: 4px; position: relative; padding: 2px;}
+    .order-example span:before{ content: ""; background: url("../images/red-arrow.png")no-repeat; display: block; position: absolute; width: 10px;
+        height: 13px;
+        right: 39px;
+        top: -13px;}
+        input[type="radio"] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          input[type="radio"] {
+            border:2px solid white;
+            box-shadow:0 0 0 1px #3EB1DF;
+            appearance:none;
+            border-radius:50%;
+            width:12px;
+            height:12px;
+            background-color:#fff;
+            transition:all ease-in 0.2s;
+          
+          }
+          input[type="radio"]:checked{
+            background-color:#3EB1DF;
+          }          
