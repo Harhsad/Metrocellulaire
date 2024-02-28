@@ -1,0 +1,90 @@
+.login-guest main{background: #F4F4F4;}
+.login-guest .login-form{ background: #fff; border-radius:0; border: none; box-shadow:0px 4px 4px 4px rgba(0,0,0,0.25); padding: 4em; width: 84%;
+    margin: 2em auto 1em auto}
+.login-guest .login-form input.form-control {
+    border-radius: 4px;
+    border-width: 1px;
+}
+.login-guest .login-form button{width: 100%; text-align: center; padding: 0.5em 1em; display: block;}
+.login-form .login-options{ flex-direction: inherit; font-size: 0.875em;}
+.login-form .login-options a, .login-form a{ padding: 0 0.5em; color: #0D97EF; font-family: 'robotoregular';}
+.login-form .guest-login{ text-align: center;}
+.login-form .guest-login .login-options{display: block;  font-size: 0.875em;}
+.login-guest .login-form-box{ padding: 0 1em; position: relative;}
+.login-guest .guest-login:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    left: -15px;
+    background: #666666;
+}
+.login-guest .guest-login:after{ position: absolute;
+    content: "OR";
+    width: 35px;
+    height: 35px;
+    LEFT: -33px;
+    top: 42%;
+    line-height: 1.7;
+    background: #fff;
+    border-radius: 30px;
+    font-family: 'roboto_mediumregular';
+    font-size: 1.25em;}   
+    .login-guest h4{ padding-bottom: 1em; font-family: 'roboto_mediumregular';}
+    .login-guest .login-form-box .form-group{ position: relative;}
+    .field-icon-visible {
+        position: absolute;
+        z-index: 8;
+        width: 25px;
+        height: 20px;
+        background: url(../images/visible.png) no-repeat;
+        top: 30px;
+        right: 15px;
+    }
+    .field-icon-invisible {
+        position: absolute;
+        z-index: 8;
+        width: 25px;
+        height: 20px;
+        background: url(../images/invisible.png) no-repeat;
+        top: 30px;
+        right: 15px;
+    }
+
+
+
+    @media screen and (min-width: 768px) and (max-width: 991px) { 
+        .login-guest .login-form{ width:100%}
+    }
+    @media screen and (max-width: 767px) { 
+        .login-guest .login-form-box {
+            padding: 2em 1em 2em 1em;
+        }
+        .login-guest .login-form{ padding: 1em; width: 100%;}
+        .login-guest .guest-login:before {
+            position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    background: #666666;
+    top: 0em;
+    right: 0;
+        }
+        .login-guest .guest-login:after {
+            position: absolute;
+            content: "OR";
+            width: 35px;
+            height: 35px;
+            LEFT: 44%;
+            top: -15px;
+            line-height: 1.7;
+            background: #fff;
+            border-radius: 30px;
+            font-family: 'roboto_mediumregular';
+            font-size: 1.25em;
+            right: auto;
+        }
+    }
