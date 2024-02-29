@@ -1,0 +1,116 @@
+/*guest checkout*/
+input[type="radio"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  } 
+  input[type="radio"] {
+    border:2px solid white;
+    box-shadow:0 0 0 1px #3EB1DF;
+    appearance:none;
+    border-radius:50%;
+    width:12px;
+    height:12px;
+    background-color:#fff;
+    transition:all ease-in 0.2s;
+  
+  }
+  input[type="radio"]:checked{
+    background-color:#3EB1DF;
+  }  
+.brand-description h1 span {    font-size: 2rem;}
+.delivery-address .delivery-box h2 {
+    color: #000;
+    font-size: 1.5em;
+    font-family: 'oswald_regularregular';
+    margin: 0;
+}
+.guestpaymentmethod .delivery-box {
+    border: #EAEAEA solid 1px;
+    border-radius: 6px;
+    padding: 1.5em 2em;
+    margin-bottom: 2em;
+    color:#666666
+}
+.guestpaymentmethod .delivery-box .addcards{ margin-top: 0.5em;}
+.guestpaymentmethod .delivery-box .form-check{ margin-top:1em}
+.guestpaymentmethod .delivery-box a{ color:#0D97EF}
+button {
+    width: 100%;
+    text-align: center;
+    text-transform:uppercase !important;
+    padding: 0.5em 1em !important;
+    text-transform: uppercase !important;
+    width: auto;
+    line-height: 1.5;
+}
+.thankyoupage{ background: #F0F9FF; padding: 0} 
+.thankyoupage .content{min-height: 700px}
+.thankyoupage .content-area{ color:#666666}
+.thankyoupage .content-area p{font-size: 1rem}
+.thankyoupage .content-area ul li{ padding-bottom: 0.5em}
+.thankyoupage .content-area ul li span{ font-family: 'roboto_mediumregular'; width: 110px;  display: inline-block;}
+.thankyoupage .content-area h2{ font-size:1.25em; font-family: 'roboto_mediumregular'; margin-bottom: 1em}
+.thankyoupage .content-area ul{ margin-bottom:0.8em}
+.thankyoupage .content-area ul.contact-details li{ font-size:1.125rem}
+.thankyoupage p{ color:#666666;}
+.thankyoupage  hr{ border-color:#BCE3FC}
+.thankyoupage .activation-time h2{ font-size:1.5em; color:#666666; font-family: 'robotobold'}
+.thankyoupage .activation-time.border-box{ border:#BCE3FC solid 2px; border-radius: 8px; padding:1.2em; margin-left: 4em}
+.thankyoupage .activation-time h4{ font-size:1.25em; color:#666666; margin-top: 0}
+.thankyoupage .icons-top, .thankyoupage .icons-bottom{ position: relative; z-index: 0;}
+.thankyoupage .icons-top:before {
+    content: "";
+    background: url(../images/thankyou-icon1.png) no-repeat;
+    background-position: left top;
+    width: 251px;
+    height: 354px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+.thankyoupage .icons-top:after {
+    content: "";
+    background: url(../images/thankyou-icon2.png) no-repeat;
+    background-position: right top;
+    width: 238px;
+    height: 175px;
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    z-index: 3;
+}
+.thankyoupage .icons-bottom:before {
+    content: "";
+    background: url(../images/thankyou-icon4.png) no-repeat;
+    background-position: left bottom;
+    width: 158px;
+    height: 150px;
+    display: block;
+    position: absolute;
+    left: -2em;
+    bottom: -2em;
+	top:initial;
+    z-index: 3;
+}
+.thankyoupage .icons-bottom:after {
+    content: "";
+    background: url(../images/thankyou-icon3.png) no-repeat;
+    background-position: right top;
+    width: 129px;
+    height: 244px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: inherit;
+    z-index: 3;
+    bottom: 2em;
+}
+@media screen and (max-width: 1500px){
+.thankyoupage .icons-top, .thankyoupage .icons-bottom {
+    opacity: 0.1;
+}
+}
